@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-@import "flowbite";
+@import 'flowbite';
 
 /* import Flowbite Vue styles */
 @import 'flowbite-vue/index.css';
@@ -15,126 +15,125 @@
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Thin.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-ThinItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-ThinItalic.ttf') format('truetype');
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-ExtraLight.ttf') format('truetype');
+  src: url('../fonts/FiraSans-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-ExtraLightItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-LightItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Italic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Medium.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-MediumItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-SemiBold.ttf') format('truetype');
+  src: url('../fonts/FiraSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-SemiBoldItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-BoldItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-ExtraBold.ttf') format('truetype');
+  src: url('../fonts/FiraSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-ExtraBoldItalic.ttf') format('truetype');
+  src: url('../fonts/FiraSans-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-Black.ttf') format('truetype');
+  src: url('../fonts/FiraSans-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'FiraSans';
-  src: url('@/assets/fonts/FiraSans/FiraSans-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
+@layer base {
+  body, html {
+    font-family: 'FiraSans' !important;
+  }
 }
