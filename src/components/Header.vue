@@ -2,8 +2,10 @@
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
 import SocialBadge from './ui/SocialBadge.vue';
 import Splitter from './ui/Splitter.vue';
+import { FwbAvatar } from 'flowbite-vue'
+import profilePic from "../assets/images/profile_pic.png"
 
-// import { Badge } from "shadcn-vue";
+
 interface SocialBadgeContent {
     url: string;
     text: string;
@@ -20,12 +22,7 @@ const socials: SocialBadgeContent[] = [
 <template>
     <section class="flex flex-col sm:flex-row items-center gap-10 p-6">
         <!-- Avatar -->
-        <div class="relative">
-            <div class="w-44 h-44">
-                <img src="../assets/images/profile_pic.png" alt="Alonso Rapado" class="w-full h-full object-cover" />
-            </div>
-        </div>
-
+        <fwb-avatar bordered size="xl" :img="profilePic" rounded status-position="top-right" />
         <!-- Text & Badges -->
         <div class="flex flex-col items-center sm:items-start text-center sm:text-left gap-4 max-w-xl">
             <!-- Headline -->
@@ -44,5 +41,5 @@ const socials: SocialBadgeContent[] = [
             </div>
         </div>
     </section>
-    <Splitter/>
+    <Splitter />
 </template>
