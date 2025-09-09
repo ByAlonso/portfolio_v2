@@ -1,13 +1,15 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+module.exports = {
+  content: [
+    './index.html',
+    'src/**/*.{js,jsx,ts,tsx,vue}',
+    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx,vue}',
+  ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      fontFamily:{
-        sans: ["FiraSans", 'sans-serif']
-      }
-    },
+    extend: {},
   },
-  plugins: [],
+  variants: {
+    extend: {},
+  },
+  plugins: [require('flowbite/plugin')],
 }
-

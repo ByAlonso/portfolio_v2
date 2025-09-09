@@ -10,3 +10,7 @@ import Header from "./components/Header.vue"
     <Header></Header>
   </div>
 </template>
+
+<style scoped>
+@reference "./assets/styles/main.css";
+</style>
