@@ -70,7 +70,7 @@ const hover = ref(false);
 
 
 .tech-icon:hover .icon {
-  filter: drop-shadow(0 0 8px var(--tech-color));
+  filter: drop-shadow(0 0 2px var(--tech-color));
 }
 
 /* Enhanced tooltip */
