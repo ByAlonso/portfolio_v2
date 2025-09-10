@@ -43,7 +43,7 @@ const socials: SocialBadgeContent[] = [
 
         <div class="flex flex-col items-left md:items-start text-center md:text-left gap-12 max-w-xl">
             <div class="flex flex-col items-left md:items-start text-center md:text-left gap-4 max-w-xl">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-[var(--color-primary)] tracking-tight">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-[var(--color-text-primary)] tracking-tight">
                     Alonso Rapado
                 </h1>
                 <p class="text-xl font-medium text-[var(--color-text-secondary)] mt-1">

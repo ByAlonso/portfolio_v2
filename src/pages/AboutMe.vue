@@ -9,10 +9,10 @@ import Splitter from '../components/ui/Splitter.vue';
         </h2>
         
         <blockquote class="ml-4 border-l-4 border-[var(--color-accent)] pl-6">
-            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            <p class="text-lg text-[var(--color-text-primary)] leading-relaxed mb-4">
                 {{ $t('about.bio') }}
             </p>
-            <cite class="text-gray-500 italic">
+            <cite class="text-[var(--color-text-secondary)] italic">
                 ~ {{ $t('about.cite') }}
             </cite>
         </blockquote>
