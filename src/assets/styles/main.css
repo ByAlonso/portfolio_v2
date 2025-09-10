@@ -120,12 +120,12 @@
 
 :root {
   /* Light theme - Fresh lime accent */
-  --color-bg: #ffffff;            /* pure white background */
-  --color-bg-alt: #f9fafb;        /* gray 50 for cards/sections */
-  --color-text-primary: #111827;  /* gray 900 - primary text */
-  --color-text-secondary: #374151;/* gray 700 - secondary text */
-  --color-text-tertiary: #6b7280; /* gray 500 - muted text */
-  --color-heading: #1f2937;       /* gray 800 - headings */
+  --color-bg: #dfe4dc;            /* darker gray-green background */
+  --color-bg-alt: #eef2eb;        /* keep alt as-is (good contrast) */
+  --color-text-primary: #1e293b;  /* slate 800 */
+  --color-text-secondary: #334155;/* slate 700 */
+  --color-text-tertiary: #64748b; /* slate 500 */
+  --color-heading: #111827;       /* slate 900 */
   
   /* Lime accent theme */
   --color-accent: #84cc16;        /* lime 500 - primary accent */
@@ -134,7 +134,7 @@
   --color-accent-dark: #365314;   /* lime 800 - dark accent */
   --color-accent-contrast: #ffffff; /* white text on lime */
   
-  --color-border: #e5e7eb;        /* gray 200 - borders */
+--color-border: #9ca3af; /* gray-400 → more contrast */
   --color-quote-bg: #f7fee7;      /* lime 50 - quote backgrounds */
   --color-quote-text: #365314;    /* lime 800 - quote text */
   
@@ -189,7 +189,7 @@
   --color-postman: #FF6C37;
 
   /* Header colors */
-  --color-mail: #22d3ee;
+  --color-mail: #10b981;
   --color-linkedin: #0A66C2;
 }
 
