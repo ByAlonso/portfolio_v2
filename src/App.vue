@@ -4,6 +4,7 @@ function clickMe() {
 }
 import Header from "./components/Header.vue"
 import AboutMe from "./components/ui/AboutMe.vue";
+import Skills from "./components/ui/Skills.vue";
 import Timeline from "./components/ui/Timeline.vue";
 </script>
 
@@ -12,6 +13,7 @@ import Timeline from "./components/ui/Timeline.vue";
     <Header />
     <AboutMe />
     <Timeline />
+    <Skills />
   </div>
 </template>
 
