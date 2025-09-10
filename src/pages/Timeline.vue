@@ -11,9 +11,7 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
     </h2>
 
     <div class="relative max-w-4xl mx-auto">
-      <!-- Timeline line -->
-      <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--color-accent)] via-[var(--color-secondary)] to-[var(--color-tertiary)] hidden sm:block"></div>
-      
+
       <ol class="relative space-y-12">
         <!-- Current position - simplified -->
         <li class="relative sm:pl-16 group">
@@ -32,7 +30,8 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
 
             <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
               <div class="flex-1">
-                <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-300 pb-2">
+                <h3
+                  class="text-2xl font-bold text-[var(--color-text-primary)] mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-300 pb-2">
                   {{ $t('timeline.current.title') }}
                 </h3>
                 <p class="text-lg text-[var(--color-text-secondary)] leading-relaxed">
@@ -41,10 +40,13 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
               </div>
 
               <div class="flex flex-col items-end gap-2">
-                <button class="flex items-center gap-3 px-6 py-3 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-hover)] text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold">
+                <button
+                  class="flex btn-secondary gap-3 px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
-                    <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                    <path
+                      d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
+                    <path
+                      d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
                   </svg>
                   <span>Download CV</span>
                 </button>
@@ -56,14 +58,17 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
         <!-- Past positions -->
         <li v-for="job in jobs" :key="job" class="relative sm:pl-16 group">
           <!-- Timeline dot -->
-          <div class="absolute left-4 top-8 w-4 h-4 bg-[var(--color-text-tertiary)] rounded-full border-4 border-[var(--color-bg)] shadow-lg transition-all duration-300 
+          <div
+            class="absolute left-4 top-8 w-4 h-4 bg-[var(--color-text-tertiary)] rounded-full border-4 border-[var(--color-bg)] shadow-lg transition-all duration-300 
                       group-hover:bg-[var(--color-secondary-hover)] group-hover:scale-125 group-hover:shadow-xl hidden sm:block">
           </div>
 
-          <div class="card-hover rounded-2xl p-8 group-hover:border-[var(--color-secondary-hover)] transition-all duration-300">
+          <div
+            class="card-hover rounded-2xl p-8 group-hover:border-[var(--color-secondary-hover)] transition-all duration-300">
             <div class="flex flex-wrap lg:flex-nowrap justify-between items-start gap-4 mb-6">
               <div class="flex-1 min-w-[250px]">
-                <h3 class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2">
+                <h3
+                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2">
                   {{ $t(`timeline.${job}.title`) }}
                 </h3>
                 <p class="text-[var(--color-accent)] font-semibold text-lg">
@@ -72,11 +77,12 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
               </div>
 
               <!-- Location badge - not clickable but with hover -->
-              <div class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] transition-all duration-300 cursor-default">
+              <div
+                class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] transition-all duration-300 cursor-default">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd"
-                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                        clip-rule="evenodd" />
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
                 </svg>
                 {{ $t(`timeline.${job}.location`) }}
               </div>
