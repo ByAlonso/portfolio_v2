@@ -11,130 +11,109 @@
 /* add Flowbite Vue directory using @source directive */
 @source "../node_modules/flowbite-vue";
 
-/* ===== FiraSans Font Faces ===== */
+/* ===== PlusJakartaSans Font Faces ===== */
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Thin.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-ThinItalic.ttf') format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-ExtraLight.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-ExtraLightItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Light.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-LightItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Italic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Medium.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-MediumItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-SemiBold.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-SemiBoldItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-BoldItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-ExtraBold.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-ExtraBoldItalic.ttf') format('truetype');
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
-}
-
-@font-face {
-  font-family: 'FiraSans';
-  src: url('../fonts/FiraSans-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
 }
 
 @layer base {
   body, html {
-    font-family: 'FiraSans' !important;
+    font-family: 'PlusJakartaSans' !important;
   }
 }
 

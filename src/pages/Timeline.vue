@@ -5,6 +5,9 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
 </script>
 
 <template>
+    <h2 class="text-3xl font-medium text-[var(--color-accent)] mb-8 flex items-center gap-3">
+        {{ $t('timeline.title') }}
+    </h2>
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
 
         <li class="mb-10 ms-4">

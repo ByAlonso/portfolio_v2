@@ -6,7 +6,6 @@ import Splitter from '../components/ui/Splitter.vue';
     <section class="about-me">
         <h2 class="text-3xl font-medium text-[var(--color-accent)] mb-8 flex items-center gap-3">
             {{ $t('about.title') }} 
-            <!-- <span class="text-2xl">👤</span> -->
         </h2>
         
         <blockquote class="ml-4 border-l-4 border-[var(--color-accent)] pl-6">
