@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 const props = defineProps<{
   url: string;
   text: string;
-  icon: IconProp; // accepts the Font Awesome icon
+  icon: IconProp;
 }>();
 </script>
 
