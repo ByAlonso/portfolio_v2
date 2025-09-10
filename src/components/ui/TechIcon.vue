@@ -30,7 +30,7 @@ const props = defineProps({
   },
   variant: {
     type: String,
-    default: "tech", // "tech" | "social"
+    default: "tech", // "tech" | "social" | "header"
   }
 });
 const hover = ref(false);

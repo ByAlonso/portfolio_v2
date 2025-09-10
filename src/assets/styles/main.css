@@ -191,6 +191,8 @@
   /* Header colors */
   --color-mail: #10b981;
   --color-linkedin: #0A66C2;
+
+  transition: all 0.25s ease-in-out;
 }
 
 
