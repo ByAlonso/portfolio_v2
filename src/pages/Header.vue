@@ -18,19 +18,19 @@ const socials: SocialBadgeContent[] = [
         url: "https://www.linkedin.com/in/alonsorapadoguillen/",
         label: "LinkedIn",
         icon: "devicon-linkedin-plain colored",
-        color: "#0A66C2"
+        color: "var(--color-linkedin)"
     },
     {
         url: "https://github.com/byAlonso",
         label: "GitHub",
-        icon: "devicon-github-original colored",
-        color: "#181717"
+        icon: "devicon-github-original",
+        color: "var(--color-github-actions)"
     },
     {
         url: "mailto:alonso.rapado@hotmail.com",
         label: "Email",
         icon: "fa-solid fa-envelope",
-        color: "#EA4335"
+        color: "var(--color-mail)"
     }
 ];
 

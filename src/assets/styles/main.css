@@ -131,7 +131,51 @@
   --color-border: #e5e7eb;        /* light gray */
   --color-quote-bg: #fffde7;      /* subtle pale yellow */
   --color-quote-text: #92400e;    /* warm brown for quotes */
+
+    /* Programming Languages */
+  --color-java: #007396;
+  --color-elixir: #6e4a7e;
+  --color-python: #e0c633;
+  --color-cpp: #00599C;
+  --color-javascript: #F7DF1E;
+  --color-typescript: #3178C6;
+
+  /* Frontend */
+  --color-react: #61DAFB;
+  --color-angular: #DD0031;
+  --color-vue: #42b883;
+  --color-html: #E34F26;
+  --color-css: #1572B6;
+  --color-sass: #CC6699;
+  --color-tailwind: #38B2AC;
+
+  /* Backend */
+  --color-spring: #6DB33F;
+  --color-dotnet: #512BD4;
+  --color-nodejs: #339933;
+  --color-kafka: #231F20;
+  --color-flask: #000000;
+  --color-fastapi: #009688;
+
+  /* DevOps */
+  --color-azure: #0078D4;
+  --color-kubernetes: #326CE5;
+  --color-docker: #2496ED;
+  --color-terraform: #623CE4;
+  --color-github-actions: #181717;
+  --color-jenkins: #D24939;
+  --color-ibm-cloud: #054ADA;
+
+  /* Databases / Tools */
+  --color-postgresql: #336791;
+  --color-mongodb: #47A248;
+  --color-postman: #FF6C37;
+
+  /* Header colors */
+  --color-mail: #facc15;
+  --color-linkedin: #0A66C2;
 }
+
 
 .dark {
   /* Dark theme */
@@ -146,5 +190,10 @@
   --color-border: #374151;        /* gray border */
   --color-quote-bg: #292524;      /* dark muted brown */
   --color-quote-text: #fde68a;    /* soft yellow */
+
+    /* Override dark problematic colors */
+  --color-kafka: #f3f3f3;
+  --color-flask: #ffffff;
+  --color-github-actions: #ffffff;
 }
 

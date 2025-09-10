@@ -4,7 +4,7 @@ import AboutMe from "./pages/AboutMe.vue";
 import Skills from "./pages/Skills.vue";
 import Timeline from "./pages/Timeline.vue";
 
-// // Example: in main.js or a Vue composable
+// Example: in main.js or a Vue composable
 // const html = document.documentElement
 
 // // Enable dark mode
