@@ -1,11 +1,14 @@
 <script setup lang="ts">
-function clickMe() {
-  console.log("Hola")
-}
 import Header from "./pages/Header.vue"
 import AboutMe from "./pages/AboutMe.vue";
 import Skills from "./pages/Skills.vue";
 import Timeline from "./pages/Timeline.vue";
+
+// // Example: in main.js or a Vue composable
+// const html = document.documentElement
+
+// // Enable dark mode
+// html.classList.add('dark')
 </script>
 
 <template>
