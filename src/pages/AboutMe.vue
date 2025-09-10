@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Splitter from './Splitter.vue';
+import Splitter from '../components/ui/Splitter.vue';
 
 </script>
 

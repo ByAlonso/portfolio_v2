@@ -1,11 +1,10 @@
-<script setup>
-import Splitter from './Splitter.vue';
+<script setup lang="ts">
+import Splitter from '../components/ui/Splitter.vue';
 
 const jobs = ["job1", "job2", "job3", "job4", "job5"]
 </script>
 
 <template>
-
     <ol class="relative border-s border-gray-200 dark:border-gray-700">
         <li v-for="job in jobs" class="mb-10 ms-4">
             <div

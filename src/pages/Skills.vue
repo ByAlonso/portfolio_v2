@@ -14,7 +14,7 @@
     </section>
 </template>
 
-<script setup>
-import TechIcon from "./TechIcon.vue";
-import skillList from "../utils/skillList.ts"
+<script setup lang="ts">
+import TechIcon from "../components/ui/TechIcon.vue";
+import skillList from "../components/utils/skillList.ts"
 </script>

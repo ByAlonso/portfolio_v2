@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { IconProp } from '@fortawesome/fontawesome-svg-core';
-import SocialBadge from './ui/SocialBadge.vue';
-import Splitter from './ui/Splitter.vue';
+import SocialBadge from '../components/ui/SocialBadge.vue';
+import Splitter from '../components/ui/Splitter.vue';
 import { FwbAvatar } from 'flowbite-vue'
 import profilePic from "../assets/images/profile_pic.png"
 

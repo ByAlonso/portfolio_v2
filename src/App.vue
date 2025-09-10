@@ -2,10 +2,10 @@
 function clickMe() {
   console.log("Hola")
 }
-import Header from "./components/Header.vue"
-import AboutMe from "./components/ui/AboutMe.vue";
-import Skills from "./components/ui/Skills.vue";
-import Timeline from "./components/ui/Timeline.vue";
+import Header from "./pages/Header.vue"
+import AboutMe from "./pages/AboutMe.vue";
+import Skills from "./pages/Skills.vue";
+import Timeline from "./pages/Timeline.vue";
 </script>
 
 <template>
