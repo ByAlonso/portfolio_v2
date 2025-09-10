@@ -1,7 +1,44 @@
 {
-    "appBar": {
-        "profile": "Moj profil",
-        "changePassword": "Promeni \u0161ifru",
-        "logout": "Odjavi se"
+    "timeline": {
+        "job1" : {
+            "company": "NTT Data Business Solutions",
+            "title": "Senior Software Engineer",
+            "start_date": "Nov. 2024",
+            "end_date": "Nov. 2025",
+            "location": "Copenhagen, Denmark",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "job2" : {
+            "company": "MOTOROLASOLUTIONS",
+            "title": "Software Engineer",
+            "start_date": "Sep. 2023",
+            "end_date": "Nov. 2024",
+            "location": "Copenhagen, Denmark",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "job3" : {
+            "company": "MOTOROLASOLUTIONS",
+            "title": "Part Time Software Engineer",
+            "start_date": "Jun. 2022",
+            "end_date": "Sep. 2023",
+            "location": "Copenhagen, Denmark",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "job4" : {
+            "company": "INDRA",
+            "title": "Junior Software Engineer",
+            "start_date": "Jan. 2021",
+            "end_date": "Aug. 2021",
+            "location": "Madrid, Spain",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "job5" : {
+            "company": "TELEFÓNICA",
+            "title": "Software Engineer Intern",
+            "start_date": "Dec. 2019",
+            "end_date": "Dec. 2020",
+            "location": "Madrid, Spain",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
     }
 }
