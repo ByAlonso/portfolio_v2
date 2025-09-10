@@ -6,7 +6,7 @@
     @mouseleave="hover = false"
   >
     <!-- FontAwesome Icon -->
-    <font-awesome-icon :icon="icon" class="icon" />
+    <i :class="icon" class="icon"></i>
 
     <!-- Tooltip -->
     <transition name="fade">
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 const props = defineProps({
   label: String,
@@ -27,11 +27,9 @@ const props = defineProps({
     default: "#EF652A"
   },
   icon: {
-    type: [Array, String], // FontAwesome icons can be ["fab","html5"], etc.
     required: true
   }
 });
-
 const hover = ref(false);
 </script>
 
@@ -66,13 +64,13 @@ const hover = ref(false);
 }
 
 /* Shine reflection only on icon */
-.icon::after {
+/* .icon::after {
   content: "";
   position: absolute;
   top: -50%;
   left: -50%;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     120deg,
     transparent 40%,
@@ -82,7 +80,7 @@ const hover = ref(false);
   transform: translateX(-100%) rotate(25deg);
   pointer-events: none;
   opacity: 0;
-}
+} */
 
 .tech-icon:hover .icon::after {
   opacity: 1;
