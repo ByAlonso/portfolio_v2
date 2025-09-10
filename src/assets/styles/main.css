@@ -232,6 +232,22 @@
 }
 
 /* Vibrant gradient utilities */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
+}
+
+.bg-gradient-subtle {
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+}
+
+.bg-gradient-lime {
+  background: linear-gradient(135deg, #84cc16 0%, #22c55e 50%, #10b981 100%);
+}
+
 .text-gradient {
   background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
   -webkit-background-clip: text;
