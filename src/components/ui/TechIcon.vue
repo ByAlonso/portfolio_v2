@@ -1,16 +1,15 @@
 <template>
-  <div 
-    class="tech-icon" 
-    :style="{ '--color': color }"
-    @mouseenter="hover = true"
-    @mouseleave="hover = false"
-  >
-    <!-- FontAwesome Icon -->
+  <div class="tech-icon" :class="{ 'tech-icon--social': variant === 'social' }" :style="{ '--color': color }"
+    @mouseenter="hover = true" @mouseleave="hover = false">
+    <!-- Icon -->
     <i :class="icon" class="icon"></i>
 
-    <!-- Tooltip -->
+    <!-- Label inline if social -->
+    <span v-if="variant === 'social'" class="ml-2 font-medium">{{ label }}</span>
+
+    <!-- Tooltip if tech -->
     <transition name="fade">
-      <div v-if="hover" class="tooltip">
+      <div v-if="variant === 'tech' && hover" class="tooltip">
         {{ label }}
       </div>
     </transition>
@@ -28,6 +27,10 @@ const props = defineProps({
   },
   icon: {
     required: true
+  },
+  variant: {
+    type: String,
+    default: "tech", // "tech" | "social"
   }
 });
 const hover = ref(false);
@@ -40,7 +43,8 @@ const hover = ref(false);
   height: 70px;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.05);
-  border: 2px solid var(--color); /* 👈 always visible border */
+  border: 2px solid var(--color);
+  /* 👈 always visible border */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,25 +66,6 @@ const hover = ref(false);
   position: relative;
   z-index: 1;
 }
-
-/* Shine reflection only on icon */
-/* .icon::after {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent 40%,
-    rgba(255, 255, 255, 0.6) 50%,
-    transparent 60%
-  );
-  transform: translateX(-100%) rotate(25deg);
-  pointer-events: none;
-  opacity: 0;
-} */
 
 .tech-icon:hover .icon::after {
   opacity: 1;
@@ -113,8 +98,19 @@ const hover = ref(false);
 .fade-leave-active {
   transition: opacity 0.2s;
 }
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+
+.tech-icon--social {
+  width: auto;
+  height: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  gap: 0.5rem;
 }
 </style>

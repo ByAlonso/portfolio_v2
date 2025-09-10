@@ -9,7 +9,7 @@ import Timeline from "./pages/Timeline.vue";
 </script>
 
 <template>
-  <div class="mx-auto max-w-4xl px-5 mb-5 flex flex-col gap-10">
+  <div class="mx-auto max-w-3xl px-5 mb-5 flex flex-col gap-10">
     <Header />
     <AboutMe />
     <Timeline />

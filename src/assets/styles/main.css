@@ -137,3 +137,35 @@
     font-family: 'FiraSans' !important;
   }
 }
+
+
+:root {
+  /* Light theme */
+  --color-bg: #ffffff;            /* page background */
+  --color-bg-alt: #f9fafb;        /* sections / cards */
+  --color-text-primary: #111827;  /* almost black */
+  --color-text-secondary: #374151;/* dark gray for subtitles */
+  --color-text-tertiary: #6b7280; /* muted gray */
+  --color-heading: #000000;       /* black headings */
+  --color-accent: #facc15;        /* yellow 400 (primary brand color) */
+  --color-accent-contrast: #1a1a1a; /* text on yellow */
+  --color-border: #e5e7eb;        /* light gray */
+  --color-quote-bg: #fffde7;      /* subtle pale yellow */
+  --color-quote-text: #92400e;    /* warm brown for quotes */
+}
+
+.dark {
+  /* Dark theme */
+  --color-bg: #111827;            /* dark gray */
+  --color-bg-alt: #1f2937;        /* card/section bg */
+  --color-text-primary: #f9fafb;  /* white-ish */
+  --color-text-secondary: #d1d5db;/* light gray */
+  --color-text-tertiary: #9ca3af; /* muted gray */
+  --color-heading: #fef9c3;       /* pale yellow headings */
+  --color-accent: #facc15;        /* same yellow accent */
+  --color-accent-contrast: #000000; /* black text on yellow */
+  --color-border: #374151;        /* gray border */
+  --color-quote-bg: #292524;      /* dark muted brown */
+  --color-quote-text: #fde68a;    /* soft yellow */
+}
+
