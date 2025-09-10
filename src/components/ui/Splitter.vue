@@ -1,3 +1,3 @@
 <template>
-    <hr class="border border-dotted border-gray-300 rounded-md">
+    <hr class="border-2 border-dotted border-[var(--color-border)] rounded-md  opacity-60">
 </template>

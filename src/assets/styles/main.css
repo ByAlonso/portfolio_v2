@@ -189,7 +189,7 @@
   --color-postman: #FF6C37;
 
   /* Header colors */
-  --color-mail: #facc15;
+  --color-mail: #84cc16;
   --color-linkedin: #0A66C2;
 }
 
@@ -204,7 +204,7 @@
   --color-heading: #f8fafc;       /* slate 50 - headings */
   
   /* Lime accent theme - dark mode */
-  --color-accent: #a3e635;        /* lime 400 - brighter for dark */
+  --color-accent: #aae64b;        /* lime 400 - brighter for dark */
   --color-accent-hover: #84cc16;  /* lime 500 - hover state */
   --color-accent-light: #1a2e05;  /* lime 900 - dark backgrounds */
   --color-accent-dark: #bef264;   /* lime 300 - lighter accent */
@@ -232,22 +232,6 @@
 }
 
 /* Vibrant gradient utilities */
-.bg-gradient-primary {
-  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-secondary) 100%);
-}
-
-.bg-gradient-secondary {
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-tertiary) 100%);
-}
-
-.bg-gradient-subtle {
-  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
-}
-
-.bg-gradient-lime {
-  background: linear-gradient(135deg, #84cc16 0%, #22c55e 50%, #10b981 100%);
-}
-
 .text-gradient {
   background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
   -webkit-background-clip: text;
@@ -273,12 +257,12 @@
 
 .card-hover:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px -12px rgba(132, 204, 22, 0.15);
-  border-color: var(--color-accent);
+  box-shadow: 0 20px 40px -12px rgba(16, 185, 129, 0.15);
+  border-color: var(--color-secondary);
 }
 
 .card-glow:hover {
-  box-shadow: 0 0 30px rgba(132, 204, 22, 0.3);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.3);
 }
 
 .btn-primary {

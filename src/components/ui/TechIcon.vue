@@ -1,11 +1,11 @@
 <template>
-  <div class="tech-icon" :class="{ 'tech-icon--social': variant === 'social' }" :style="{ '--color': color }"
+  <div class="tech-icon" :class="{ 'tech-icon--social': variant === 'social' }" :style="{ '--tech-color': color }"
     @mouseenter="hover = true" @mouseleave="hover = false">
     <!-- Icon -->
     <i :class="icon" class="icon"></i>
 
     <!-- Label inline if social -->
-    <span v-if="variant === 'social'" class="ml-2 font-medium">{{ label }}</span>
+    <span v-if="variant === 'social'" class="ml-2 font-semibold">{{ label }}</span>
 
     <!-- Tooltip if tech -->
     <transition name="fade">
@@ -16,14 +16,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { ref } from "vue";
 
-const _props = defineProps({
+const props = defineProps({
   label: String,
   color: {
     type: String,
-    default: "#EF652A"
+    default: "#84cc16"
   },
   icon: {
     required: true
@@ -39,64 +39,75 @@ const hover = ref(false);
 <style scoped>
 .tech-icon {
   position: relative;
-  width: 70px;
-  height: 70px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid var(--color);
-  /* 👈 always visible border */
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: var(--color-bg-alt);
+  border: 2px solid var(--tech-color);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: box-shadow 0.3s ease, transform 0.3s ease, background 0.3s ease;
-  font-size: 2rem;
-  color: var(--color);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 2.2rem;
+  color: var(--tech-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Glow + lift */
+/* Enhanced glow + lift with lime accent */
 .tech-icon:hover {
-  box-shadow: 0 0 20px var(--color), inset 0 0 10px var(--color);
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
+  box-shadow: 
+    0 0 30px var(--tech-color), 
+    0 10px 40px rgba(132, 204, 22, 0.2),
+    inset 0 0 15px rgba(132, 204, 22, 0.1);
+  transform: translateY(-8px) scale(1.05);
 }
 
-/* Icon */
 .icon {
   position: relative;
-  z-index: 1;
+  transition: all 0.3s ease;
 }
 
-.tech-icon:hover .icon::after {
-  opacity: 1;
-  animation: shine 0.8s forwards;
+
+.tech-icon:hover .icon {
+  filter: drop-shadow(0 0 8px var(--tech-color));
 }
 
-@keyframes shine {
-  100% {
-    transform: translateX(100%) rotate(25deg);
-  }
-}
-
-/* Tooltip */
+/* Enhanced tooltip */
 .tooltip {
   position: absolute;
-  top: -40px;
-  background: var(--color-bg-alt); 
-  border: 1px solid var(--color);
-  border-radius: 8px;
-  padding: 4px 10px;
-  font-size: 0.9rem;
+  top: -50px;
+  background: var(--color-bg);
+  border: 2px solid var(--tech-color);
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color);
+  color: var(--color-text-primary);
   pointer-events: none;
   white-space: nowrap;
-  z-index: 10;
+  z-index: 999;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+    z-index: 30;
+
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--tech-color);
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s;
+  transition: opacity 0.3s ease;
 }
 
 .fade-enter-from,
@@ -106,11 +117,14 @@ const hover = ref(false);
 
 .tech-icon--social {
   width: auto;
-  height: auto;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  font-size: 1.2rem;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 16px;
+  font-size: 1.5rem;
   display: inline-flex;
-  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 160px;
 }
 </style>

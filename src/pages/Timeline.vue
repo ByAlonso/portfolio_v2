@@ -5,99 +5,103 @@ const jobs = ["job1", "job2", "job3", "job4", "job5"]
 </script>
 
 <template>
-    <div class="py-8">
-        <h2 class="text-3xl font-medium text-[var(--color-accent)] mb-12 flex items-center gap-3">
-            {{ $t('timeline.title') }}
-            <span class="text-2xl">📅</span>
-        </h2>
+  <div class="py-16">
+    <h2 class="text-4xl md:text-5xl font-black text-gradient-lime mb-16 flex items-center justify-center gap-4 pb-4">
+      {{ $t('timeline.title') }}
+    </h2>
 
-        <div class="relative">
-            <ol class="relative space-y-8">
-                <!-- Current position -->
-                <li class="relative sm:pl-12 group">
-                    <!-- Pulsing current indicator -->
-                    <div class="absolute left-4 top-2 w-4 h-4 -translate-x-1/2">
-                        <div class="absolute inset-0 bg-green-400 rounded-full animate-ping opacity-75"></div>
-                        <div class="w-4 h-4 bg-green-500 rounded-full border-2 border-white shadow-lg"></div>
-                    </div>
+    <div class="relative max-w-4xl mx-auto">
+      <!-- Timeline line -->
+      <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[var(--color-accent)] via-[var(--color-secondary)] to-[var(--color-tertiary)] hidden sm:block"></div>
+      
+      <ol class="relative space-y-12">
+        <!-- Current position - simplified -->
+        <li class="relative sm:pl-16 group">
+          <!-- Simple pulsing current indicator -->
+          <div class="absolute left-4 top-2 w-6 h-6 -translate-x-1/2 hidden sm:block">
+            <div class="absolute inset-0 bg-[var(--color-secondary)] rounded-full animate-ping opacity-75"></div>
+            <div class="w-6 h-6 bg-[var(--color-secondary)] rounded-full border-4 border-white shadow-xl"></div>
+          </div>
 
-                    <div
-                        class="bg-[var(--color-bg-alt)] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:scale-[1.02] transform">
-                        <div class="flex items-center gap-2 mb-3">
-                            <div
-                                class="px-2 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
-                                {{ $t('timeline.current.time') }}
-                            </div>
-                        </div>
+          <div class="card-hover rounded-2xl p-8 border border-[var(--color-secondary)] bg-[var(--color-bg-alt)]">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="px-4 py-2 bg-[var(--color-secondary)] text-white rounded-lg text-sm font-semibold">
+                {{ $t('timeline.current.time') }}
+              </div>
+            </div>
 
-                        <div class="flex flex-col md:flex-row justify-between items-start gap-4">
-                            <div class="flex-1">
-                                <h3
-                                    class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-accent)] transition-colors">
-                                    {{ $t('timeline.current.title') }}
-                                </h3>
-                                <p class="text-[var(--color-text-secondary)] leading-relaxed">
-                                    {{ $t('timeline.current.description') }}
-                                </p>
-                            </div>
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold text-[var(--color-text-primary)] mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-300 pb-2">
+                  {{ $t('timeline.current.title') }}
+                </h3>
+                <p class="text-lg text-[var(--color-text-secondary)] leading-relaxed">
+                  {{ $t('timeline.current.description') }}
+                </p>
+              </div>
 
-                            <div class="flex flex-col items-end md:items-start gap-1">
-                                <button
-                                    class="group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-lg transition-all duration-200 transform hover:scale-105 hover:shadow-lg">
-                                    <svg class="w-4 h-4 transition-transform group-hover:translate-y-0.5"
-                                        fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
-                                        <path
-                                            d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-                                    </svg>
-                                    <span class="text-sm font-medium">Download</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+              <div class="flex flex-col items-end gap-2">
+                <button class="flex items-center gap-3 px-6 py-3 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-hover)] text-white rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
+                    <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+                  </svg>
+                  <span>Download CV</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
 
-                <!-- Past positions -->
-                <li v-for="job in jobs" :key="job" class="relative sm:pl-12 group">
-                    <!-- Timeline dot -->
-                    <div class="absolute left-4 top-6 w-3 h-3 bg-gray-400 dark:bg-gray-600 rounded-full border-2 border-[var(--color-bg)] shadow-sm transition-all duration-200 group-hover:bg-blue-400 group-hover:scale-125
-           hidden sm:block">
-                    </div>
+        <!-- Past positions -->
+        <li v-for="job in jobs" :key="job" class="relative sm:pl-16 group">
+          <!-- Timeline dot -->
+          <div class="absolute left-4 top-8 w-4 h-4 bg-[var(--color-text-tertiary)] rounded-full border-4 border-[var(--color-bg)] shadow-lg transition-all duration-300 
+                      group-hover:bg-[var(--color-secondary-hover)] group-hover:scale-125 group-hover:shadow-xl hidden sm:block">
+          </div>
 
+          <div class="card-hover rounded-2xl p-8 group-hover:border-[var(--color-secondary-hover)] transition-all duration-300">
+            <div class="flex flex-wrap lg:flex-nowrap justify-between items-start gap-4 mb-6">
+              <div class="flex-1 min-w-[250px]">
+                <h3 class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2">
+                  {{ $t(`timeline.${job}.title`) }}
+                </h3>
+                <p class="text-[var(--color-accent)] font-semibold text-lg">
+                  {{ $t(`timeline.${job}.company`) }}
+                </p>
+              </div>
 
+              <!-- Location badge - not clickable but with hover -->
+              <div class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] transition-all duration-300 cursor-default">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                        clip-rule="evenodd" />
+                </svg>
+                {{ $t(`timeline.${job}.location`) }}
+              </div>
+            </div>
 
-                    <div class="bg-[var(--color-bg-alt)] rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:scale-[1.02] transform
-           md:pl-12 w-full">
-                        <div class="flex flex-wrap md:flex-nowrap justify-between items-start gap-2 mb-4">
-                            <div class="flex-1 min-w-[200px]">
-                                <h3
-                                    class="text-lg font-bold text-[var(--color-text-primary)] mb-1 group-hover:text-[var(--color-accent)] transition-colors">
-                                    {{ $t(`timeline.${job}.title`) }}
-                                </h3>
-                                <p class="text-blue-600 dark:text-blue-400 font-medium">
-                                    {{ $t(`timeline.${job}.company`) }}
-                                </p>
-                            </div>
-
-                            <div class="text-[var(--color-text-tertiary)] flex items-center gap-1 text-sm">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                {{ $t(`timeline.${job}.location`) }}
-                            </div>
-                        </div>
-
-
-                        <p class="text-[var(--color-text-secondary)] leading-relaxed mb-4">
-                            {{ $t(`timeline.${job}.description`) }}
-                        </p>
-                    </div>
-                </li>
-            </ol>
-        </div>
+            <p class="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+              {{ $t(`timeline.${job}.description`) }}
+            </p>
+          </div>
+        </li>
+      </ol>
     </div>
-    <Splitter />
+  </div>
+  <Splitter />
 </template>
+
+<style scoped>
+.animation-delay-75 {
+  animation-delay: 75ms;
+}
+
+.group:hover .text-gradient {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+</style>
