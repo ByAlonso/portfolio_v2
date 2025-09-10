@@ -4,7 +4,7 @@ const skillList = [
     skills: [
       { label: "Java", icon: "devicon-java-plain colored", color: "#007396" },
       { label: "Elixir", icon: "devicon-elixir-plain colored", color: "#6e4a7e" },
-      { label: "Python", icon: "devicon-python-plain colored", color: "#3776AB" },
+      { label: "Python", icon: "devicon-python-plain colored", color: "#e0c633ff" },
       { label: "C++", icon: "devicon-cplusplus-plain colored", color: "#00599C" },
       { label: "JavaScript", icon: "devicon-javascript-plain colored", color: "#F7DF1E" },
       { label: "TypeScript", icon: "devicon-typescript-plain colored", color: "#3178C6" }

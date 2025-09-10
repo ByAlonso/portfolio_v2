@@ -97,7 +97,7 @@ const hover = ref(false);
 .tooltip {
   position: absolute;
   top: -40px;
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
   border: 1px solid var(--color);
   border-radius: 8px;
   padding: 4px 10px;

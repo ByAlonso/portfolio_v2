@@ -12,9 +12,11 @@
             </div>
         </div>
     </section>
+    <Splitter />
 </template>
 
 <script setup lang="ts">
 import TechIcon from "../components/ui/TechIcon.vue";
+import Splitter from "../components/ui/Splitter.vue";
 import skillList from "../components/utils/skillList.ts"
 </script>
