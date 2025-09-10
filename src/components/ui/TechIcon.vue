@@ -19,7 +19,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const props = defineProps({
+const _props = defineProps({
   label: String,
   color: {
     type: String,
