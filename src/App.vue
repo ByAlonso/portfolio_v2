@@ -13,7 +13,3 @@ import Timeline from "./pages/Timeline.vue";
     <Skills />
   </div>
 </template>
-
-<style scoped>
-@reference "./assets/styles/main.css";
-</style>

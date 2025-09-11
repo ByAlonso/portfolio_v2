@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Splitter from '../components/ui/Splitter.vue';
 import skillsList from "@/components/utils/skillList"
+import CV from "@/assets/downloads/Alonso_Rapado_GL_pic.pdf"
 
 const jobs = {
   "ntt_senior": ["Python", "TypeScript", "Angular", "React", "FastAPI", "Terraform", "Docker", "IBM", "MongoDB", "PostgreSQL"],
@@ -10,6 +11,16 @@ const jobs = {
   "TELEFONICA": ["Python", "TypeScript", "Angular", "Flask", ".NET", "Azure", "Docker"],
 }
 const status = "unemployed"
+
+const downloadCV = () => {
+  console.log("clicked")
+  const a = document.createElement("a");
+  a.href = CV;
+  a.download = "Alonso_Rapado_CV.pdf"
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
 </script>
 
 <template>
@@ -49,7 +60,7 @@ const status = "unemployed"
               </div>
 
               <div class="flex flex-col items-end gap-2">
-                <button
+                <button @click="downloadCV"
                   class="flex btn-secondary gap-3 px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-semibold cursor-pointer">
                   <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path
