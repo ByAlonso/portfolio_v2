@@ -7,12 +7,14 @@ import TechIcon from "@/components/ui/TechIcon.vue";
 import ThemeToggle from "@/components/ui/ThemeToggle.vue";
 import LanguagePicker from "@/components/ui/LanguagePicker.vue";
 import { useI18n } from 'vue-i18n'
+import CV from "@/assets/downloads/Alonso_Rapado_GL_pic.pdf"
 
 interface SocialBadgeContent {
   url: string;
   label: string;
   icon: string;
   color: string;
+  download?: string;
 }
 
 const socials: SocialBadgeContent[] = [
@@ -34,6 +36,13 @@ const socials: SocialBadgeContent[] = [
     icon: "fa-solid fa-envelope",
     color: "var(--color-mail)",
   },
+  {
+    url: CV,
+    label: 'CV',
+    icon: "fa-solid fa-download",
+    color: "var(--color-accent)",
+    download: "Alonso_Rapado_CV.pdf"
+  }
 ];
 
 const { locale } = useI18n()
@@ -151,8 +160,8 @@ onUnmounted(() => {
         <!-- Right side: Socials and theme toggle -->
         <div class="flex items-center justify-end w-full">
           <!-- Left side: Social icons -->
-          <div class="hidden sm:flex items-center gap-2">
-            <a v-for="social in socials.slice(0, 3)" :key="social.label" :href="social.url" target="_blank"
+          <div class="hidden md:flex items-center gap-2">
+            <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download" target="_blank"
               rel="noopener noreferrer"
               class="p-2 rounded-lg hover:bg-[var(--color-hover)] transition-colors duration-300">
               <TechIcon variant="header" :icon="social.icon" :label="social.label" :color="social.color" size="sm" />
@@ -201,8 +210,8 @@ onUnmounted(() => {
         </div>
 
         <!-- Social Section -->
-        <div class="flex flex-col sm:flex-row gap-6">
-          <a v-for="social in socials" :key="social.label" :href="social.url" target="_blank" rel="noopener noreferrer">
+        <div class="flex flex-col md:flex-row gap-6 justify-center">
+          <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download" target="_blank" rel="noopener noreferrer">
             <TechIcon variant="social" :icon="social.icon" :label="social.label" :color="social.color" />
           </a>
         </div>
