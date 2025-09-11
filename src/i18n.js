@@ -3,9 +3,9 @@ import en from './localization/en.json'
 import es from './localization/es.json'
 
 const i18n = createI18n({
-  locale: 'SPANISH',
-  fallbackLocale: 'ENGLISH',
-  messages: { ENGLISH: en, SPANISH: es },
+  locale: 'es',
+  fallbackLocale: 'en',
+  messages: { en: en, es: es },
 })
 
 export default i18n

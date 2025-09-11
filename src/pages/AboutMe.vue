@@ -12,11 +12,11 @@ import Splitter from '../components/ui/Splitter.vue';
             <div class="absolute  top-0 w-1 h-full bg-gradient-primary rounded-full"></div>
             <div class="pl-8">
                 <p class="text-lg md:text-xl text-[var(--color-text-primary)] leading-relaxed mb-6 font-medium">
-                    {{ $t('about.bio') }}
+                    {{ $t('personal.about') }}
                 </p>
                 <cite class="text-[var(--color-text-secondary)] italic text-base flex items-center gap-2">
                     <span class="w-2 h-2 bg-[var(--color-accent)] rounded-full"></span>
-                    {{ $t('about.cite') }}
+                    {{ $t('personal.name') }}
                 </cite>
             </div>
         </blockquote>

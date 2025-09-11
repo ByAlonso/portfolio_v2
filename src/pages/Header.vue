@@ -5,6 +5,8 @@ import Splitter from "../components/ui/Splitter.vue";
 import profilePic from "../assets/images/profile_pic.png";
 import TechIcon from "@/components/ui/TechIcon.vue";
 import ThemeToggle from "@/components/ui/ThemeToggle.vue";
+import LanguagePicker from "@/components/ui/LanguagePicker.vue";
+import { useI18n } from 'vue-i18n'
 
 interface SocialBadgeContent {
   url: string;
@@ -34,6 +36,76 @@ const socials: SocialBadgeContent[] = [
   },
 ];
 
+const { locale } = useI18n()
+
+// Manage theme state in parent
+const isDark = ref(false)
+
+// Manage language state in parent
+const isSpanish = ref(false)
+
+// Theme methods
+const toggleTheme = () => {
+  isDark.value = !isDark.value
+
+  if (isDark.value) {
+    document.documentElement.classList.add('dark')
+    localStorage.setItem('theme', 'dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+    localStorage.setItem('theme', 'light')
+  }
+}
+
+const initializeTheme = () => {
+  const savedTheme = localStorage.getItem('theme')
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  isDark.value = savedTheme === 'dark' || (!savedTheme && prefersDark)
+
+  if (isDark.value) {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}
+
+// Language methods
+const toggleLanguage = () => {
+  isSpanish.value = !isSpanish.value
+
+  const newLanguage = isSpanish.value ? 'es' : 'en'
+
+  // Update i18n locale
+  locale.value = newLanguage
+
+  // Update DOM and localStorage
+  if (isSpanish.value) {
+    document.documentElement.setAttribute('lang', 'es')
+    localStorage.setItem('language', 'es')
+  } else {
+    document.documentElement.setAttribute('lang', 'en')
+    localStorage.setItem('language', 'en')
+  }
+}
+
+const initializeLanguage = () => {
+  const savedLang = localStorage.getItem('language')
+  const browserLang = navigator.language || navigator.languages[0]
+  const preferSpanish = browserLang.startsWith('es')
+
+  isSpanish.value = savedLang === 'es' || (!savedLang && preferSpanish)
+
+  const language = isSpanish.value ? 'es' : 'en'
+  locale.value = language
+
+  if (isSpanish.value) {
+    document.documentElement.setAttribute('lang', 'es')
+  } else {
+    document.documentElement.setAttribute('lang', 'en')
+  }
+}
+
 const isScrolled = ref(false);
 
 const handleScroll = () => {
@@ -41,6 +113,8 @@ const handleScroll = () => {
 };
 
 onMounted(() => {
+  initializeTheme();
+  initializeLanguage();
   window.addEventListener("scroll", handleScroll);
 });
 
@@ -67,9 +141,9 @@ onUnmounted(() => {
           <img class="w-12 h-12 rounded-full ring-2 ring-[var(--color-accent)] shadow-lg" :src="profilePic"
             alt="Profile Picture" />
           <div>
-            <h2 class="text-xl font-bold text-gradient-lime">Alonso Rapado</h2>
+            <h2 class="text-xl font-bold text-gradient-lime">{{ $t('personal.name') }}</h2>
             <p class="text-sm text-[var(--color-text-secondary)]">
-              Software Engineer
+              {{ $t('personal.role') }}
             </p>
           </div>
         </div>
@@ -86,7 +160,8 @@ onUnmounted(() => {
           </div>
 
           <!-- Theme toggle button -->
-          <ThemeToggle />
+          <ThemeToggle :isDark="isDark" @toggle="toggleTheme" />
+          <LanguagePicker :isSpanish="isSpanish" @toggle="toggleLanguage" />
         </div>
       </div>
     </div>
@@ -95,10 +170,10 @@ onUnmounted(() => {
   <!-- Main Hero Section -->
   <div class="relative">
     <!-- Theme Toggle Button - Top Right -->
-    <div class="absolute top-8 right-4 sm:top- sm:right-10 z-10">
-      <ThemeToggle />
+    <div class="absolute top-8 right-4 sm:top- sm:right-10 z-10 flex items-center gap-4">
+      <ThemeToggle :isDark="isDark" @toggle="toggleTheme" />
+      <LanguagePicker :isSpanish="isSpanish" @toggle="toggleLanguage" />
     </div>
-
     <!-- Main Header Section -->
     <section
       class="flex flex-col items-center lg:items-center justify-center lg:justify-start gap-16 p-12 sm:p-20 min-h-[400px]">
@@ -116,10 +191,10 @@ onUnmounted(() => {
       <div class="flex flex-col items-left text-center gap-12 max-w-xl">
         <div class="flex flex-col items-left text-center gap-4 max-w-xl">
           <h1 class="text-5xl sm:text-7xl text-center font-black text-gradient-lime pb-2">
-            Alonso Rapado
+            {{ $t('personal.name') }}
           </h1>
           <p class="text-[var(--color-text-secondary)] text-2xl max-w-xl">
-            Passionate software engineer and full-stack developer.
+            {{ $t('personal.short_description') }}
           </p>
         </div>
 

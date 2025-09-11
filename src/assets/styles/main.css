@@ -112,122 +112,122 @@
 }
 
 @layer base {
-  body, html {
+  body,
+  html {
     font-family: 'PlusJakartaSans' !important;
+    white-space: pre-line;
   }
 }
 
-
 :root {
   /* Light theme - Fresh lime accent */
-  --color-bg: #dfe4dc;            /* darker gray-green background */
-  --color-bg-alt: #eef2eb;        /* keep alt as-is (good contrast) */
-  --color-text-primary: #1e293b;  /* slate 800 */
-  --color-text-secondary: #334155;/* slate 700 */
+  --color-bg: #dfe4dc; /* darker gray-green background */
+  --color-bg-alt: #eef2eb; /* keep alt as-is (good contrast) */
+  --color-text-primary: #1e293b; /* slate 800 */
+  --color-text-secondary: #334155; /* slate 700 */
   --color-text-tertiary: #64748b; /* slate 500 */
-  --color-heading: #111827;       /* slate 900 */
-  
-  /* Lime accent theme */
-  --color-accent: #84cc16;        /* lime 500 - primary accent */
-  --color-accent-hover: #65a30d;  /* lime 600 - hover state */
-  --color-accent-light: #ecfccb;  /* lime 100 - light backgrounds */
-  --color-accent-dark: #365314;   /* lime 800 - dark accent */
-  --color-accent-contrast: #ffffff; /* white text on lime */
-  
---color-border: #9ca3af; /* gray-400 → more contrast */
-  --color-quote-bg: #f7fee7;      /* lime 50 - quote backgrounds */
-  --color-quote-text: #365314;    /* lime 800 - quote text */
-  
-  /* Complementary colors */
-  --color-secondary: #10b981;     /* emerald 500 - secondary accent */
-  --color-secondary-hover: #059669; /* emerald 600 */
-  --color-tertiary: #06b6d4;      /* cyan 500 - tertiary accent */
-  
-  /* Status colors */
-  --color-success: #10b981;       /* emerald 500 */
-  --color-warning: #f59e0b;       /* amber 500 */
-  --color-error: #ef4444;         /* red 500 */
-  --color-info: #06b6d4;          /* cyan 500 */
+  --color-heading: #111827; /* slate 900 */
 
-    /* Programming Languages */
+  /* Lime accent theme */
+  --color-accent: #84cc16; /* lime 500 - primary accent */
+  --color-accent-hover: #65a30d; /* lime 600 - hover state */
+  --color-accent-light: #ecfccb; /* lime 100 - light backgrounds */
+  --color-accent-dark: #365314; /* lime 800 - dark accent */
+  --color-accent-contrast: #ffffff; /* white text on lime */
+
+  --color-border: #9ca3af; /* gray-400 → more contrast */
+  --color-quote-bg: #f7fee7; /* lime 50 - quote backgrounds */
+  --color-quote-text: #365314; /* lime 800 - quote text */
+
+  /* Complementary colors */
+  --color-secondary: #10b981; /* emerald 500 - secondary accent */
+  --color-secondary-hover: #059669; /* emerald 600 */
+  --color-tertiary: #06b6d4; /* cyan 500 - tertiary accent */
+
+  /* Status colors */
+  --color-success: #10b981; /* emerald 500 */
+  --color-warning: #f59e0b; /* amber 500 */
+  --color-error: #ef4444; /* red 500 */
+  --color-info: #06b6d4; /* cyan 500 */
+
+  /* Programming Languages */
   --color-java: #007396;
   --color-elixir: #6e4a7e;
   --color-python: #e0c633;
-  --color-cpp: #00599C;
-  --color-javascript: #F7DF1E;
-  --color-typescript: #3178C6;
+  --color-cpp: #00599c;
+  --color-javascript: #f7df1e;
+  --color-typescript: #3178c6;
 
   /* Frontend */
-  --color-react: #61DAFB;
-  --color-angular: #DD0031;
+  --color-react: #61dafb;
+  --color-angular: #dd0031;
   --color-vue: #42b883;
-  --color-html: #E34F26;
-  --color-css: #1572B6;
-  --color-sass: #CC6699;
-  --color-tailwind: #38B2AC;
+  --color-html: #e34f26;
+  --color-css: #1572b6;
+  --color-sass: #cc6699;
+  --color-tailwind: #38b2ac;
 
   /* Backend */
-  --color-spring: #6DB33F;
-  --color-dotnet: #512BD4;
+  --color-spring: #6db33f;
+  --color-dotnet: #512bd4;
   --color-nodejs: #339933;
-  --color-kafka: #231F20;
+  --color-kafka: #231f20;
   --color-flask: #000000;
   --color-fastapi: #009688;
 
   /* DevOps */
-  --color-azure: #0078D4;
-  --color-kubernetes: #326CE5;
-  --color-docker: #2496ED;
-  --color-terraform: #623CE4;
+  --color-azure: #0078d4;
+  --color-kubernetes: #326ce5;
+  --color-docker: #2496ed;
+  --color-terraform: #623ce4;
   --color-github-actions: #181717;
-  --color-jenkins: #D24939;
-  --color-ibm-cloud: #054ADA;
+  --color-jenkins: #d24939;
+  --color-ibm-cloud: #054ada;
 
   /* Databases / Tools */
   --color-postgresql: #336791;
-  --color-mongodb: #47A248;
-  --color-postman: #FF6C37;
+  --color-mongodb: #47a248;
+  --color-postman: #ff6c37;
 
   /* Header colors */
   --color-mail: #10b981;
-  --color-linkedin: #0A66C2;
+  --color-linkedin: #0a66c2;
 
   transition: all 0.25s ease-in-out;
 }
 
-
 .dark {
   /* Dark theme - Vibrant lime on dark */
-  --color-bg: #0f172a;            /* slate 900 - dark background */
-  --color-bg-alt: #1e293b;        /* slate 800 - card backgrounds */
-  --color-text-primary: #f1f5f9;  /* slate 100 - primary text */
-  --color-text-secondary: #cbd5e1;/* slate 300 - secondary text */
+  --color-bg: #0f172a; /* slate 900 - dark background */
+  --color-bg-alt: #1e293b; /* slate 800 - card backgrounds */
+  --color-text-primary: #f1f5f9; /* slate 100 - primary text */
+  --color-text-secondary: #cbd5e1; /* slate 300 - secondary text */
   --color-text-tertiary: #94a3b8; /* slate 400 - muted text */
-  --color-heading: #f8fafc;       /* slate 50 - headings */
-  
+  --color-heading: #f8fafc; /* slate 50 - headings */
+
   /* Lime accent theme - dark mode */
-  --color-accent: #aae64b;        /* lime 400 - brighter for dark */
-  --color-accent-hover: #84cc16;  /* lime 500 - hover state */
-  --color-accent-light: #1a2e05;  /* lime 900 - dark backgrounds */
-  --color-accent-dark: #bef264;   /* lime 300 - lighter accent */
+  --color-accent: #aae64b; /* lime 400 - brighter for dark */
+  --color-accent-hover: #84cc16; /* lime 500 - hover state */
+  --color-accent-light: #1a2e05; /* lime 900 - dark backgrounds */
+  --color-accent-dark: #bef264; /* lime 300 - lighter accent */
   --color-accent-contrast: #0f172a; /* dark text on lime */
-  
-  --color-border: #334155;        /* slate 700 - borders */
-  --color-quote-bg: #292524;      /* stone 800 - quote backgrounds */
-  --color-quote-text: #bef264;    /* lime 300 - quote text */
-  
+
+  --color-border: #334155; /* slate 700 - borders */
+  --color-quote-bg: #292524; /* stone 800 - quote backgrounds */
+  --color-quote-text: #bef264; /* lime 300 - quote text */
+
   /* Complementary colors - dark variants */
-  --color-secondary: #34d399;     /* emerald 400 */
+  --color-secondary: #34d399; /* emerald 400 */
   --color-secondary-hover: #10b981; /* emerald 500 */
-  --color-tertiary: #22d3ee;      /* cyan 400 */
+  --color-tertiary: #22d3ee; /* cyan 400 */
 
   /* Status colors - dark variants */
-  --color-success: #34d399;       /* emerald 400 */
-  --color-warning: #fbbf24;       /* amber 400 */
-  --color-error: #f87171;         /* red 400 */
-  --color-info: #22d3ee;          /* cyan 400 */
+  --color-success: #34d399; /* emerald 400 */
+  --color-warning: #fbbf24; /* amber 400 */
+  --color-error: #f87171; /* red 400 */
+  --color-info: #22d3ee; /* cyan 400 */
 
-    /* Override dark problematic colors */
+  /* Override dark problematic colors */
   --color-kafka: #f3f3f3;
   --color-flask: #ffffff;
   --color-github-actions: #ffffff;
@@ -304,7 +304,8 @@
 }
 
 @keyframes pulse-lime {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -315,4 +316,3 @@
 .glow {
   box-shadow: 0 0 20px rgba(132, 204, 22, 0.5);
 }
-

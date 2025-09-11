@@ -1,5 +1,5 @@
 <template>
-    <button @click="toggleTheme" class="p-2 rounded-4xl cursor-pointer transition-all duration-300 bg-[var(--color-accent-light)]/80
+    <button @click="handleToggle" class="p-2 rounded-4xl cursor-pointer transition-all duration-300 bg-[var(--color-accent-light)]/80
          hover:bg-[var(--color-accent-dark)]" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
         <transition name="icon-fade" mode="out-in">
             <!-- Sun icon for light mode -->
@@ -22,36 +22,19 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
+// Accept isDark as prop instead of managing local state
+const props = defineProps<{
+    isDark: boolean
+}>()
 
-const isDark = ref(false);
+// Emit toggle event to parent
+const emit = defineEmits<{
+    toggle: []
+}>()
 
-const toggleTheme = () => {
-    isDark.value = !isDark.value;
-    if (isDark.value) {
-        document.documentElement.classList.add("dark");
-        localStorage.setItem("theme", "dark");
-    } else {
-        document.documentElement.classList.remove("dark");
-        localStorage.setItem("theme", "light");
-    }
-};
-
-const initializeTheme = () => {
-    const savedTheme = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    isDark.value = savedTheme === "dark" || (!savedTheme && prefersDark);
-
-    if (isDark.value) {
-        document.documentElement.classList.add("dark");
-    } else {
-        document.documentElement.classList.remove("dark");
-    }
-};
-
-onMounted(() => {
-    initializeTheme();
-});
+const handleToggle = () => {
+    emit('toggle')
+}
 </script>
 
 <style scoped>

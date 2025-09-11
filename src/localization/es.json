@@ -1,4 +1,10 @@
 {
+    "personal": {
+        "name": "Alonso Rapado",
+        "role": "Mid - Senior Software Engineer",
+        "short_description": "Ingeniero de Software Backend con versatilidad para desarrollar soluciones completas",
+        "about": "Ingeniero de Software con una sólida experiencia en desarrollo Backend y Full-Stack. La mayor parte de mi experiencia está en desarrollar aplicaciones escalables y APIs, asegurándome de que los sistemas estén funcionando y sean estables. \n\n Aunque mi enfoque principal es Backend y Full-Stack, también estoy cómodo desplegando y manteniendo soluciones en la nube. \n\n Cuando no estoy programando, me puedes encontrar en mi motocicleta explorando nuevas rutas, probando juegos de mesa, o levantando hierros en el gimnasio."
+    },
     "timeline": {
         "title": "Experiencia laboral",
         "job1": {
@@ -43,15 +49,21 @@
         },
         "current": {
             "time": "Actualidad",
-            "title": "Buscando trabajo!",
-            "description": "Descripcion",
+            "title": {
+                "employed": "¡Empleado!",
+                "unemployed": "¡Activamente buscando trabajo!",
+                "exploring": "¡Abierto a escuchar nuevas oportunidades!"
+            },
+            "description": {
+                "employed": "¡Disfrutando de mi nuevo puesto!",
+                "unemployed": "¡Listo para llevar mis habilidades a un nuevo equipo!",
+                "exploring": "¡Feliz en mi puesto pero curioseando nuevas oportunidades!"
+            },
             "downloadCV": "Descargar CV"
         }
     },
     "about": {
-        "title": "Sobre mi",
-        "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "cite": "Yo"
+        "title": "Sobre mi"
     },
     "skills": {
         "title": "Tecnologías",
@@ -60,5 +72,9 @@
         "backend": "Backend & Servicios",
         "devops": "Cloud & DevOps",
         "databases": "Bases de datos & Herramientas"
+    },
+    "languages": {
+        "english": "Inglés",
+        "spanish": "Español"
     }
 }
