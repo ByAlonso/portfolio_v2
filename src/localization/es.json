@@ -7,21 +7,21 @@
     },
     "timeline": {
         "title": "Experiencia laboral",
-        "job1": {
+        "job5": {
             "company": "NTT Data Business Solutions",
             "title": "Ingeniero de Software Senior",
             "start_date": "Nov. 2024",
             "end_date": "Nov. 2025",
             "location": "Copenhague, Dinamarca",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "Trabajé en soluciones de IA y proyectos Full-Stack para diferentes clientes."
         },
-        "job2": {
+        "job4": {
             "company": "MOTOROLASOLUTIONS",
             "title": "Ingeniero de Software",
             "start_date": "Sep. 2023",
             "end_date": "Nov. 2024",
             "location": "Copenhague, Dinamarca",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "Desarrollé microservicios para sistemas de comunicaciones críticas."
         },
         "job3": {
             "company": "MOTOROLASOLUTIONS",
@@ -29,23 +29,23 @@
             "start_date": "Jun. 2022",
             "end_date": "Sep. 2023",
             "location": "Copenhague, Dinamarca",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "Mantenimiento de Jenkins CI/CD mientras gestionaba entornos de VM y servidores físicos."
         },
-        "job4": {
+        "job2": {
             "company": "INDRA",
             "title": "Ingeniero de Software Junior",
             "start_date": "Ene. 2021",
             "end_date": "Ago. 2021",
             "location": "Madrid, España",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "Desarrollé componentes de Angular a partir de diseños UX."
         },
-        "job5": {
+        "job1": {
             "company": "TELEFÓNICA",
             "title": "Ingeniero de Software Practicas",
             "start_date": "Dic. 2019",
             "end_date": "Dic. 2020",
             "location": "Madrid, España",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "description": "Convertí ideas innovadoras en prototipos funcionales."
         },
         "current": {
             "time": "Actualidad",

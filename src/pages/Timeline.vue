@@ -57,7 +57,7 @@ const status = "unemployed"
         </li>
 
         <!-- Past positions -->
-        <li v-for="job in jobs" :key="job" class="relative sm:pl-16 group">
+        <li v-for="job in jobs.reverse()" :key="job" class="relative sm:pl-16 group">
           <!-- Timeline dot -->
           <div
             class="absolute left-4 top-8 w-4 h-4 bg-[var(--color-text-tertiary)] rounded-full border-4 border-[var(--color-bg)] shadow-lg transition-all duration-300 
