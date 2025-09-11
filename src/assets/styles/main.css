@@ -183,6 +183,7 @@
   --color-github-actions: #181717;
   --color-jenkins: #d24939;
   --color-ibm-cloud: #054ada;
+  --color-linux: #a89420;
 
   /* Databases / Tools */
   --color-postgresql: #336791;
@@ -193,7 +194,7 @@
   --color-mail: #10b981;
   --color-linkedin: #0a66c2;
 
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark {

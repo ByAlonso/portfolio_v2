@@ -7,7 +7,7 @@
     },
     "timeline": {
         "title": "Work experience",
-        "job5": {
+        "ntt_senior": {
             "company": "NTT Data Business Solutions",
             "title": "Senior Software Engineer",
             "start_date": "Nov. 2024",
@@ -15,7 +15,7 @@
             "location": "Copenhagen, Denmark",
             "description": "Worked on AI solutions and Full-Stack projects across different clients."
         },
-        "job4": {
+        "motorola": {
             "company": "MOTOROLASOLUTIONS",
             "title": "Software Engineer",
             "start_date": "Sep. 2023",
@@ -23,7 +23,7 @@
             "location": "Copenhagen, Denmark",
             "description": "Developed microservices for critical communications systems."
         },
-        "job3": {
+        "motorola_part": {
             "company": "MOTOROLASOLUTIONS",
             "title": "Part Time Software Engineer",
             "start_date": "Jun. 2022",
@@ -31,7 +31,7 @@
             "location": "Copenhagen, Denmark",
             "description": "Kept Jenkins pipelines running while maintaining VM environments and physical servers."
         },
-        "job2": {
+        "INDRA": {
             "company": "INDRA",
             "title": "Junior Software Engineer",
             "start_date": "Jan. 2021",
@@ -39,7 +39,7 @@
             "location": "Madrid, Spain",
             "description": "Built Angular components from UX designs."
         },
-        "job1": {
+        "TELEFONICA": {
             "company": "TELEFÓNICA",
             "title": "Software Engineer Intern",
             "start_date": "Dec. 2019",

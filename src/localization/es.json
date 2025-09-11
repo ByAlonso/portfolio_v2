@@ -7,7 +7,7 @@
     },
     "timeline": {
         "title": "Experiencia laboral",
-        "job5": {
+        "ntt_senior": {
             "company": "NTT Data Business Solutions",
             "title": "Ingeniero de Software Senior",
             "start_date": "Nov. 2024",
@@ -15,7 +15,7 @@
             "location": "Copenhague, Dinamarca",
             "description": "Trabajé en soluciones de IA y proyectos Full-Stack para diferentes clientes."
         },
-        "job4": {
+        "motorola": {
             "company": "MOTOROLASOLUTIONS",
             "title": "Ingeniero de Software",
             "start_date": "Sep. 2023",
@@ -23,7 +23,7 @@
             "location": "Copenhague, Dinamarca",
             "description": "Desarrollé microservicios para sistemas de comunicaciones críticas."
         },
-        "job3": {
+        "motorola_part": {
             "company": "MOTOROLASOLUTIONS",
             "title": "Ingeniero de Software a tiempo parcial",
             "start_date": "Jun. 2022",
@@ -31,7 +31,7 @@
             "location": "Copenhague, Dinamarca",
             "description": "Mantenimiento de Jenkins CI/CD mientras gestionaba entornos de VM y servidores físicos."
         },
-        "job2": {
+        "INDRA": {
             "company": "INDRA",
             "title": "Ingeniero de Software Junior",
             "start_date": "Ene. 2021",
@@ -39,7 +39,7 @@
             "location": "Madrid, España",
             "description": "Desarrollé componentes de Angular a partir de diseños UX."
         },
-        "job1": {
+        "TELEFONICA": {
             "company": "TELEFÓNICA",
             "title": "Ingeniero de Software Practicas",
             "start_date": "Dic. 2019",

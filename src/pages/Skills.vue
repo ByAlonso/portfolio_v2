@@ -7,7 +7,7 @@
 
     <!-- Enhanced skill groups -->
     <div class="flex flex-col gap-12 max-w-6xl mx-auto">
-      <div v-for="skillGroup in skillList" :key="skillGroup.name"
+      <div v-for="skillGroup in skills.skillList" :key="skillGroup.name"
         class="card-hover card-glow rounded-3xl p-8 md:p-12 group">
 
         <h3
@@ -29,5 +29,5 @@
 <script setup lang="ts">
 import TechIcon from "../components/ui/TechIcon.vue";
 import Splitter from "../components/ui/Splitter.vue";
-import skillList from "../components/utils/skillList.ts"
+import skills from "@/components/utils/skillList"
 </script>

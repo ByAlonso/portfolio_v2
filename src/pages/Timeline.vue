@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import Splitter from '../components/ui/Splitter.vue';
+import skillsList from "@/components/utils/skillList"
 
-const jobs = ["job1", "job2", "job3", "job4", "job5"]
+const jobs = {
+  "ntt_senior": ["Python", "TypeScript", "Angular", "React", "FastAPI", "Terraform", "Docker", "IBM", "MongoDB", "PostgreSQL"],
+  "motorola": ["Elixir", "Java", "TypeScript", "Spring", "Angular", "Kubernetes", "Docker", "Kafka", "Azure"],
+  "motorola_part": ["Python", "Java", "Jenkins", "Linux"],
+  "INDRA": ["TypeScript", "Java", "Angular", "Spring", "Kubernetes", "Docker"],
+  "TELEFONICA": ["Python", "TypeScript", "Angular", "Flask", ".NET", "Azure", "Docker"],
+}
 const status = "unemployed"
 </script>
 
@@ -57,7 +64,7 @@ const status = "unemployed"
         </li>
 
         <!-- Past positions -->
-        <li v-for="job in jobs.reverse()" :key="job" class="relative sm:pl-16 group">
+        <li v-for="[job, skills] in Object.entries(jobs)" :key="job" class="relative sm:pl-16 group">
           <!-- Timeline dot -->
           <div
             class="absolute left-4 top-8 w-4 h-4 bg-[var(--color-text-tertiary)] rounded-full border-4 border-[var(--color-bg)] shadow-lg transition-all duration-300 
@@ -89,9 +96,18 @@ const status = "unemployed"
               </div>
             </div>
 
-            <p class="text-[var(--color-text-secondary)] leading-relaxed text-lg">
+            <p class="text-[var(--color-text-secondary)] leading-relaxed text-lg mb-6">
               {{ $t(`timeline.${job}.description`) }}
             </p>
+            <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-[var(--color-border)]">
+              <div v-for="skill in skills" :key="job + skill"
+                class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] transition-all duration-300">
+                <!-- Skill Icon -->
+                <i :class="skillsList.skillIcons[skill as keyof typeof skillsList.skillIcons]" :alt="skill" class="w-4 h-4 object-contain text-[var(--color-text-primary)]" loading="lazy" />
+                <!-- Skill Name -->
+                <span class="text-sm font-medium text-[var(--color-text-secondary)] cursor-default">{{ skill }}</span>
+              </div>
+            </div>
           </div>
         </li>
       </ol>
@@ -101,10 +117,6 @@ const status = "unemployed"
 </template>
 
 <style scoped>
-.animation-delay-75 {
-  animation-delay: 75ms;
-}
-
 .group:hover .text-gradient {
   background: linear-gradient(135deg, var(--color-accent), var(--color-secondary));
   -webkit-background-clip: text;
