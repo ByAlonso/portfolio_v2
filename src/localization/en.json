@@ -73,6 +73,9 @@
         "devops": "Cloud & DevOps",
         "databases": "Databases & Tools"
     },
+    "projects":{
+        "title": "My projects"
+    },
     "languages": {
         "english": "English",
         "spanish": "Spanish"

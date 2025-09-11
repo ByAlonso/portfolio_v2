@@ -3,6 +3,7 @@ import Header from "./pages/Header.vue"
 import AboutMe from "./pages/AboutMe.vue";
 import Skills from "./pages/Skills.vue";
 import Timeline from "./pages/Timeline.vue";
+import Projects from "./pages/Projects.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import Timeline from "./pages/Timeline.vue";
     <AboutMe />
     <Timeline />
     <Skills />
+    <Projects />
   </div>
 </template>
