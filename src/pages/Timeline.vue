@@ -10,6 +10,8 @@ const jobs = {
   "INDRA": ["TypeScript", "Java", "Angular", "Spring", "Kubernetes", "Docker"],
   "TELEFONICA": ["Python", "TypeScript", "Angular", "Flask", ".NET", "Azure", "Docker"],
 }
+
+// TODO: Find a way to make this dynamic
 const status = "unemployed"
 
 const downloadCV = () => {
