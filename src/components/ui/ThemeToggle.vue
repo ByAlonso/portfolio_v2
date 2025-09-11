@@ -1,6 +1,6 @@
 <template>
-    <button @click="handleToggle" class="p-2 rounded-4xl cursor-pointer transition-all duration-300 bg-[var(--color-accent-light)]/80
-         hover:bg-[var(--color-accent-dark)]" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
+    <button @click="handleToggle" class="p-2 rounded-4xl cursor-pointer transition-all duration-300
+         hover:bg-[var(--color-accent)]/60" :title="isDark ? 'Switch to light mode' : 'Switch to dark mode'">
         <transition name="icon-fade" mode="out-in">
             <!-- Sun icon for light mode -->
             <svg v-if="isDark" key="sun"

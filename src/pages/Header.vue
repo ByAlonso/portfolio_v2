@@ -135,9 +135,9 @@ onUnmounted(() => {
       'container mx-auto px-6 transition-all duration-500 ease-in-out',
       isScrolled ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
     ]">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between ">
         <!-- Left side: Profile info -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 w-full">
           <img class="w-12 h-12 rounded-full ring-2 ring-[var(--color-accent)] shadow-lg" :src="profilePic"
             alt="Profile Picture" />
           <div>
@@ -149,8 +149,8 @@ onUnmounted(() => {
         </div>
 
         <!-- Right side: Socials and theme toggle -->
-        <div class="flex items-center gap-4">
-          <!-- Social icons -->
+        <div class="flex items-center justify-end sm:justify-around w-full">
+          <!-- Left side: Social icons -->
           <div class="hidden sm:flex items-center gap-2">
             <a v-for="social in socials.slice(0, 3)" :key="social.label" :href="social.url" target="_blank"
               rel="noopener noreferrer"
@@ -159,9 +159,11 @@ onUnmounted(() => {
             </a>
           </div>
 
-          <!-- Theme toggle button -->
-          <ThemeToggle :isDark="isDark" @toggle="toggleTheme" />
-          <LanguagePicker :isSpanish="isSpanish" @toggle="toggleLanguage" />
+          <!-- Right side: Theme toggle and Language picker -->
+          <div class="flex items-center gap-4">
+            <ThemeToggle :isDark="isDark" @toggle="toggleTheme" />
+            <LanguagePicker :isSpanish="isSpanish" @toggle="toggleLanguage" />
+          </div>
         </div>
       </div>
     </div>
@@ -170,7 +172,7 @@ onUnmounted(() => {
   <!-- Main Hero Section -->
   <div class="relative">
     <!-- Theme Toggle Button - Top Right -->
-    <div class="absolute top-8 right-4 sm:top- sm:right-10 z-10 flex items-center gap-4">
+    <div class="absolute top-0 right-4 sm:top- sm:right-10 z-10 flex items-center gap-4">
       <ThemeToggle :isDark="isDark" @toggle="toggleTheme" />
       <LanguagePicker :isSpanish="isSpanish" @toggle="toggleLanguage" />
     </div>

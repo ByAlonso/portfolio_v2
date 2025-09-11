@@ -1,6 +1,6 @@
 <template>
-    <button @click="handleToggle" class="p-2 rounded-4xl cursor-pointer transition-all duration-300 bg-[var(--color-accent-light)]/80
-         hover:bg-[var(--color-accent-dark)]" :title="isSpanish ? 'Switch to English' : 'Cambiar a Español'">
+    <button @click="handleToggle" class="p-2 rounded-4xl cursor-pointer transition-all duration-300
+         hover:bg-[var(--color-accent)]/60" :title="isSpanish ? 'Switch to English' : 'Cambiar a Español'">
         <transition name="lang-fade" mode="out-in">
             <!-- English flag/icon -->
             <div v-if="!isSpanish" key="en" class="w-6 h-6 flex items-center justify-center">
