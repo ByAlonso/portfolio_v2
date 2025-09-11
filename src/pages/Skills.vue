@@ -12,7 +12,7 @@
 
         <h3
           class="text-2xl md:text-3xl font-bold text-center mb-10 text-[var(--color-heading)] group-hover:text-gradient transition-all duration-300">
-          {{ skillGroup.name }}
+          {{ $t(`skills.${skillGroup.name}`) }}
         </h3>
 
         <div class="flex flex-wrap justify-center gap-8 md:gap-10">

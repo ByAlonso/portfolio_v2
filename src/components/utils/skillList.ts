@@ -1,8 +1,6 @@
-import i18n from '@/i18n'
-
 const skillList = [
   {
-    name: i18n.global.t('skills.programming_languages'),
+    name: "programming_languages",
     skills: [
       { label: 'Java', icon: 'devicon-java-plain colored', color: 'var(--color-java)' },
       {
@@ -25,7 +23,7 @@ const skillList = [
     ],
   },
   {
-    name: i18n.global.t('skills.frontend'),
+    name: "frontend",
     skills: [
       { label: 'React', icon: 'devicon-react-original colored', color: 'var(--color-react)' },
       { label: 'Angular', icon: 'devicon-angularjs-plain colored', color: 'var(--color-angular)' },
@@ -41,7 +39,7 @@ const skillList = [
     ],
   },
   {
-    name: i18n.global.t('skills.backend'),
+    name: "backend",
     skills: [
       { label: 'Spring', icon: 'devicon-spring-plain colored', color: 'var(--color-spring)' },
       { label: '.NET', icon: 'devicon-dot-net-plain colored', color: 'var(--color-dotnet)' },
@@ -64,7 +62,7 @@ const skillList = [
     ],
   },
   {
-    name: i18n.global.t('skills.devops'),
+    name: "devops",
     skills: [
       { label: 'Azure', icon: 'devicon-azure-plain colored', color: 'var(--color-azure)' },
       {
@@ -92,7 +90,7 @@ const skillList = [
     ],
   },
   {
-    name: i18n.global.t('skills.databases'),
+    name: "databases",
     skills: [
       {
         label: 'PostgreSQL',
