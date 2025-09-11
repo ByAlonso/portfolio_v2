@@ -7,7 +7,7 @@ import TechIcon from "@/components/ui/TechIcon.vue";
 import ThemeToggle from "@/components/ui/ThemeToggle.vue";
 import LanguagePicker from "@/components/ui/LanguagePicker.vue";
 import { useI18n } from 'vue-i18n'
-import CV from "@/assets/downloads/Alonso_Rapado_GL_pic.pdf"
+import CV from "@/assets/downloads/Alonso_Rapado.pdf"
 
 interface SocialBadgeContent {
   url: string;
@@ -161,8 +161,8 @@ onUnmounted(() => {
         <div class="flex items-center justify-end w-full">
           <!-- Left side: Social icons -->
           <div class="hidden md:flex items-center gap-2">
-            <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download" target="_blank"
-              rel="noopener noreferrer"
+            <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download"
+              target="_blank" rel="noopener noreferrer"
               class="p-2 rounded-lg hover:bg-[var(--color-hover)] transition-colors duration-300">
               <TechIcon variant="header" :icon="social.icon" :label="social.label" :color="social.color" size="sm" />
             </a>
@@ -211,7 +211,8 @@ onUnmounted(() => {
 
         <!-- Social Section -->
         <div class="flex flex-col md:flex-row gap-6 justify-center">
-          <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download" target="_blank" rel="noopener noreferrer">
+          <a v-for="social in socials" :key="social.label" :href="social.url" :download="social.download"
+            target="_blank" rel="noopener noreferrer">
             <TechIcon variant="social" :icon="social.icon" :label="social.label" :color="social.color" />
           </a>
         </div>

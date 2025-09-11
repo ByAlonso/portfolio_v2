@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Splitter from '../components/ui/Splitter.vue';
 import skillsList from "@/components/utils/skillList"
-import CV from "@/assets/downloads/Alonso_Rapado_GL_pic.pdf"
+import CV from "@/assets/downloads/Alonso_Rapado.pdf"
 
 const jobs = {
   "ntt_senior": ["Python", "TypeScript", "Angular", "React", "FastAPI", "Terraform", "Docker", "IBM", "MongoDB", "PostgreSQL"],
