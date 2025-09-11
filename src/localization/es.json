@@ -79,5 +79,9 @@
     "languages": {
         "english": "Inglés",
         "spanish": "Español"
+    },
+    "location": {
+        "spain": "Madrid, España",
+        "denmark": "Copenhague, Dinamarca"
     }
 }

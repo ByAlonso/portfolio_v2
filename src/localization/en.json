@@ -73,11 +73,15 @@
         "devops": "Cloud & DevOps",
         "databases": "Databases & Tools"
     },
-    "projects":{
+    "projects": {
         "title": "My projects"
     },
     "languages": {
         "english": "English",
         "spanish": "Spanish"
+    },
+    "location": {
+        "spain": "Madrid, Spain",
+        "denmark": "Copenhagen, Denmark"
     }
 }
