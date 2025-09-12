@@ -1,6 +1,14 @@
 <template>
-  <div class="tech-icon" :class="{ 'tech-icon--social': variant === 'social' }" :style="{ '--tech-color': color }"
-    @mouseenter="hover = true" @mouseleave="hover = false">
+  <div
+    class="tech-icon"
+    :class="{
+      'tech-icon--social': variant === 'social',
+      'tech-icon--header': variant === 'header',
+    }"
+    :style="{ '--tech-color': color }"
+    @mouseenter="hover = true"
+    @mouseleave="hover = false"
+  >
     <!-- Icon -->
     <i :class="icon" class="icon"></i>
 
@@ -17,23 +25,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
 
 const props = defineProps({
   label: String,
   color: {
     type: String,
-    default: "#84cc16"
+    default: '#84cc16',
   },
   icon: {
-    required: true
+    required: true,
   },
   variant: {
     type: String,
-    default: "tech", // "tech" | "social" | "header"
-  }
-});
-const hover = ref(false);
+    default: 'tech', // "tech" | "social" | "header"
+  },
+})
+const hover = ref(false)
 </script>
 
 <style scoped>
@@ -52,12 +60,18 @@ const hover = ref(false);
   font-size: 2.2rem;
   color: var(--tech-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+.tech-icon--social,
+.tech-icon--header {
+  cursor: pointer;
 }
 
 /* Enhanced glow + lift with lime accent */
 .tech-icon:hover {
-  box-shadow: 
-    0 0 30px var(--tech-color), 
+  box-shadow:
+    0 0 30px var(--tech-color),
     0 10px 40px rgba(132, 204, 22, 0.2),
     inset 0 0 15px rgba(132, 204, 22, 0.1);
   transform: translateY(-8px) scale(1.05);
@@ -67,7 +81,6 @@ const hover = ref(false);
   position: relative;
   transition: all 0.3s ease;
 }
-
 
 .tech-icon:hover .icon {
   filter: drop-shadow(0 0 2px var(--tech-color));
@@ -98,7 +111,7 @@ const hover = ref(false);
   transform: translateX(-50%);
   width: 0;
   height: 0;
-    z-index: 30;
+  z-index: 30;
 
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Header from "./pages/Header.vue"
-import AboutMe from "./pages/AboutMe.vue";
-import Skills from "./pages/Skills.vue";
-import Timeline from "./pages/Timeline.vue";
-import Projects from "./pages/Projects.vue";
+import Header from './pages/Header.vue'
+import AboutMe from './pages/AboutMe.vue'
+import Skills from './pages/Skills.vue'
+import Timeline from './pages/Timeline.vue'
+import Projects from './pages/Projects.vue'
 </script>
 
 <template>

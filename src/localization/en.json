@@ -1,87 +1,87 @@
 {
-    "personal": {
-        "name": "Alonso Rapado",
-        "role": "Mid - Senior Software Engineer",
-        "short_description": "Backend Software Engineer who codes across the entire stack to deliver complete solutions",
-        "about": "Software Engineer with a strong background in Backend and Full-Stack development. Most of my experience is in building scalable applications and APIs while making sure the systems are up running and stable. \n\n Even though my main focus is Backend and Full-Stack, I am also comfortable deploying and maintaining solutions on the cloud. \n\n When I'm not coding, you'll find me on my motorcycle exploring new routes, strategizing over board games or pushing my limits in the gym."
+  "personal": {
+    "name": "Alonso Rapado",
+    "role": "Mid - Senior Software Engineer",
+    "short_description": "Backend Software Engineer who codes across the entire stack to deliver complete solutions",
+    "about": "Software Engineer with a strong background in Backend and Full-Stack development. Most of my experience is in building scalable applications and APIs while making sure the systems are up running and stable. \n\n Even though my main focus is Backend and Full-Stack, I am also comfortable deploying and maintaining solutions on the cloud. \n\n When I'm not coding, you'll find me on my motorcycle exploring new routes, strategizing over board games or pushing my limits in the gym."
+  },
+  "timeline": {
+    "title": "Work experience",
+    "ntt_senior": {
+      "company": "NTT Data Business Solutions",
+      "title": "Senior Software Engineer",
+      "start_date": "Nov. 2024",
+      "end_date": "Present",
+      "location": "Copenhagen, Denmark",
+      "description": "Worked on AI solutions and Full-Stack projects across different clients."
     },
-    "timeline": {
-        "title": "Work experience",
-        "ntt_senior": {
-            "company": "NTT Data Business Solutions",
-            "title": "Senior Software Engineer",
-            "start_date": "Nov. 2024",
-            "end_date": "Present",
-            "location": "Copenhagen, Denmark",
-            "description": "Worked on AI solutions and Full-Stack projects across different clients."
-        },
-        "motorola": {
-            "company": "MOTOROLASOLUTIONS",
-            "title": "Software Engineer",
-            "start_date": "Sep. 2023",
-            "end_date": "Nov. 2024",
-            "location": "Copenhagen, Denmark",
-            "description": "Developed microservices for critical communications systems."
-        },
-        "motorola_part": {
-            "company": "MOTOROLASOLUTIONS",
-            "title": "Part Time Software Engineer",
-            "start_date": "Jun. 2022",
-            "end_date": "Sep. 2023",
-            "location": "Copenhagen, Denmark",
-            "description": "Kept Jenkins pipelines running while maintaining VM environments and physical servers."
-        },
-        "INDRA": {
-            "company": "INDRA",
-            "title": "Junior Software Engineer",
-            "start_date": "Jan. 2021",
-            "end_date": "Aug. 2021",
-            "location": "Madrid, Spain",
-            "description": "Built Angular components from UX designs."
-        },
-        "TELEFONICA": {
-            "company": "TELEFÓNICA",
-            "title": "Software Engineer Intern",
-            "start_date": "Dec. 2019",
-            "end_date": "Dec. 2020",
-            "location": "Madrid, Spain",
-            "description": "Turned innovative ideas into working prototypes."
-        },
-        "current": {
-            "time": "Current",
-            "title": {
-                "employed": "Fully booked and loving it!",
-                "unemployed": "Looking for a job!",
-                "exploring": "Open to hear about new opportunities!"
-            },
-            "description": {
-                "employed": "Currently thriving in my role!",
-                "unemployed": "Ready to bring my skills to a dynamic team. Let's create something together!",
-                "exploring": "Happy in my current role but always curious about new challenges. If you have something exciting, let's chat!"
-            },
-            "downloadCV": "Download CV"
-        }
+    "motorola": {
+      "company": "MOTOROLASOLUTIONS",
+      "title": "Software Engineer",
+      "start_date": "Sep. 2023",
+      "end_date": "Nov. 2024",
+      "location": "Copenhagen, Denmark",
+      "description": "Developed microservices for critical communications systems."
     },
-    "about": {
-        "title": "About me"
+    "motorola_part": {
+      "company": "MOTOROLASOLUTIONS",
+      "title": "Part Time Software Engineer",
+      "start_date": "Jun. 2022",
+      "end_date": "Sep. 2023",
+      "location": "Copenhagen, Denmark",
+      "description": "Kept Jenkins pipelines running while maintaining VM environments and physical servers."
     },
-    "skills": {
-        "title": "Tech Stack",
-        "programming_languages": "Programming Languages",
-        "frontend": "Frontend & Frameworks",
-        "backend": "Backend & Services",
-        "devops": "Cloud & DevOps",
-        "databases": "Databases & Tools"
+    "INDRA": {
+      "company": "INDRA",
+      "title": "Junior Software Engineer",
+      "start_date": "Jan. 2021",
+      "end_date": "Aug. 2021",
+      "location": "Madrid, Spain",
+      "description": "Built Angular components from UX designs."
     },
-    "projects": {
-        "title": "My projects"
+    "TELEFONICA": {
+      "company": "TELEFÓNICA",
+      "title": "Software Engineer Intern",
+      "start_date": "Dec. 2019",
+      "end_date": "Dec. 2020",
+      "location": "Madrid, Spain",
+      "description": "Turned innovative ideas into working prototypes."
     },
-    "languages": {
-        "english": "English",
-        "spanish": "Spanish"
-    },
-    "location": {
-        "spain": "Madrid, Spain",
-        "denmark": "Copenhagen, Denmark"
+    "current": {
+      "time": "Current",
+      "title": {
+        "employed": "Fully booked and loving it!",
+        "unemployed": "Looking for a job!",
+        "exploring": "Open to hear about new opportunities!"
+      },
+      "description": {
+        "employed": "Currently thriving in my role!",
+        "unemployed": "Ready to bring my skills to a dynamic team. Let's create something together!",
+        "exploring": "Happy in my current role but always curious about new challenges. If you have something exciting, let's chat!"
+      },
+      "downloadCV": "Download CV"
     }
+  },
+  "about": {
+    "title": "About me"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "programming_languages": "Programming Languages",
+    "frontend": "Frontend & Frameworks",
+    "backend": "Backend & Services",
+    "devops": "Cloud & DevOps",
+    "databases": "Databases & Tools"
+  },
+  "projects": {
+    "title": "My projects"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "location": {
+    "spain": "Madrid, Spain",
+    "denmark": "Copenhagen, Denmark"
+  }
 }
