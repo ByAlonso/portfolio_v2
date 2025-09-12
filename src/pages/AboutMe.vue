@@ -16,7 +16,8 @@ const countries = ['spain', 'denmark']
       <div
         v-for="country in countries"
         :key="country"
-        class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] transition-all duration-300 cursor-default shadow-sm hover:shadow-md"
+        tabindex="0"
+        class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-4 py-2 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] focus:border-[var(--color-accent)] focus:bg-[var(--color-accent-light)] focus:text-[var(--color-accent-dark)] focus:outline-none transition-all duration-300 cursor-default shadow-sm hover:shadow-md focus:shadow-md"
       >
         <svg class="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
           <path

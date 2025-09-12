@@ -36,7 +36,6 @@ const jobs = {
 const status = 'unemployed'
 
 const downloadCV = () => {
-  console.log('clicked')
   const a = document.createElement('a')
   a.href = CV
   a.download = 'Alonso_Rapado_CV.pdf'
