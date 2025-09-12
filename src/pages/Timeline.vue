@@ -59,7 +59,7 @@ const downloadCV = () => {
         class="relative space-y-12 before:absolute before:left-4 before:top-8 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-[var(--color-secondary)] before:to-gray-300 before:-translate-x-1/2 before:hidden sm:before:block"
       >
         <!-- Current position - simplified -->
-        <li class="relative sm:pl-16 group">
+        <li class="relative sm:pl-16 group" tabindex="0">
           <!-- Simple pulsing current indicator -->
           <div class="absolute left-4 top-2 w-6 h-6 -translate-x-1/2 hidden sm:block z-10">
             <div
@@ -84,7 +84,7 @@ const downloadCV = () => {
             <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
               <div class="flex-1">
                 <h3
-                  class="text-2xl font-bold text-[var(--color-text-primary)] mb-3 group-hover:text-[var(--color-accent)] transition-colors duration-300 pb-2"
+                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] group-focus-within:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2"
                 >
                   {{ $t(`timeline.current.title.${status}`) }}
                 </h3>
@@ -118,6 +118,7 @@ const downloadCV = () => {
           v-for="[job, skills] in Object.entries(jobs)"
           :key="job"
           class="relative sm:pl-16 group"
+          tabindex="0"
         >
           <!-- Timeline dot -->
           <div
@@ -137,7 +138,7 @@ const downloadCV = () => {
             <div class="flex flex-wrap lg:flex-nowrap justify-between items-start gap-4 mb-6">
               <div class="flex-1 min-w-[250px]">
                 <h3
-                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2"
+                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] group-focus-within:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2"
                 >
                   {{ $t(`timeline.${job}.title`) }}
                 </h3>
@@ -148,7 +149,8 @@ const downloadCV = () => {
 
               <!-- Location badge - not clickable but with hover -->
               <div
-                class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] transition-all duration-300 cursor-default"
+                tabindex="0"
+                class="text-[var(--color-text-tertiary)] flex items-center gap-2 px-3 py-1 rounded-full bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] hover:text-[var(--color-accent-dark)] focus:border-[var(--color-accent)] focus:bg-[var(--color-accent-light)] focus:text-[var(--color-accent-dark)] focus:outline-none transition-all duration-300 cursor-default"
               >
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                   <path
@@ -170,7 +172,8 @@ const downloadCV = () => {
               <div
                 v-for="skill in skills"
                 :key="job + skill"
-                class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] transition-all duration-300"
+                tabindex="0"
+                class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[var(--color-bg-alt)] border border-[var(--color-border)] hover:border-[var(--color-accent)] hover:bg-[var(--color-accent-light)] focus:border-[var(--color-accent)] focus:bg-[var(--color-accent-light)] focus:outline-none transition-all duration-300 cursor-default"
               >
                 <!-- Skill Icon -->
                 <i
