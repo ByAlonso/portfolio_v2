@@ -13,6 +13,7 @@
         v-for="skillGroup in skills.skillList"
         :key="skillGroup.name"
         class="card-hover card-glow rounded-3xl p-8 md:p-12 group"
+        @click=""
       >
         <h3
           class="text-2xl md:text-3xl font-bold text-center mb-10 text-[var(--color-heading)] group-hover:text-gradient transition-all duration-300"

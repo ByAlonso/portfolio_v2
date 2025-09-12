@@ -8,6 +8,7 @@
     :style="{ '--tech-color': color }"
     @mouseenter="hover = true"
     @mouseleave="hover = false"
+    @click=""
   >
     <!-- Icon -->
     <i :class="icon" class="icon"></i>
