@@ -29,7 +29,7 @@ const jobs = {
   ],
   motorola_part: ['Python', 'Java', 'Jenkins', 'Linux'],
   INDRA: ['TypeScript', 'Java', 'Angular', 'Spring', 'Kubernetes', 'Docker'],
-  TELEFONICA: ['Python', 'TypeScript', 'Angular', 'Flask', '.NET', 'Azure', 'Docker'],
+  TELEFONICA: ['Python', 'TypeScript', 'Angular', 'Flask', '.NET', 'Azure', 'Docker', 'MongoDB'],
 }
 
 // TODO: Find a way to make this dynamic
