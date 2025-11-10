@@ -7,11 +7,19 @@
   },
   "timeline": {
     "title": "Work experience",
+    "ford": {
+      "company": "Ford Credit",
+      "title": "Software Engineer",
+      "start_date": "Nov. 2025",
+      "end_date": "Present",
+      "location": "Madrid, Spain",
+      "description": "Current role :)"
+    },
     "ntt_senior": {
       "company": "NTT Data Business Solutions",
       "title": "Senior Software Engineer",
       "start_date": "Nov. 2024",
-      "end_date": "Present",
+      "end_date": "Nov. 2025",
       "location": "Copenhagen, Denmark",
       "description": "Worked on AI solutions and Full-Stack projects across different clients."
     },
@@ -55,9 +63,9 @@
         "exploring": "Open to hear about new opportunities!"
       },
       "description": {
-        "employed": "Currently thriving in my role!",
+        "employed": "Currently thriving in my role! \nYou can still download my CV for future oportunities!",
         "unemployed": "Ready to bring my skills to a dynamic team. Let's create something together!",
-        "exploring": "Happy in my current role but always curious about new challenges. If you have something exciting, let's chat!"
+        "exploring": "Happy in my current role but always curious about new challenges. If you have anything exciting, let's chat!"
       },
       "downloadCV": "Download CV"
     }

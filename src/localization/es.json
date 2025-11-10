@@ -7,11 +7,19 @@
   },
   "timeline": {
     "title": "Experiencia laboral",
+    "ford": {
+      "company": "Ford Credit",
+      "title": "Ingeniero de Software",
+      "start_date": "Nov. 2025",
+      "end_date": "Presente",
+      "location": "Madrid, España",
+      "description": "Rol actual :)"
+    },
     "ntt_senior": {
       "company": "NTT Data Business Solutions",
       "title": "Ingeniero de Software Senior",
       "start_date": "Nov. 2024",
-      "end_date": "Presente",
+      "end_date": "Nov. 2025",
       "location": "Copenhague, Dinamarca",
       "description": "Trabajé en soluciones de IA y proyectos Full-Stack para diferentes clientes."
     },
@@ -55,7 +63,7 @@
         "exploring": "¡Abierto a escuchar nuevas oportunidades!"
       },
       "description": {
-        "employed": "¡Disfrutando de mi nuevo puesto!",
+        "employed": "¡Disfrutando de mi nuevo puesto!\n Aun puedes descargar mi CV para el futuro!",
         "unemployed": "¡Listo para llevar mis habilidades a un nuevo equipo!",
         "exploring": "¡Feliz en mi puesto pero curioseando nuevas oportunidades!"
       },

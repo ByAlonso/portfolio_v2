@@ -2,8 +2,10 @@
 import Splitter from '../components/ui/Splitter.vue'
 import skillsList from '@/components/utils/skillList'
 import CV from '@/assets/downloads/Alonso_Rapado.pdf'
+import { status } from '@/config/employment_status_config'
 
 const jobs = {
+  ford: ['Java', 'Spring', 'Kubernetes', 'Docker'],
   ntt_senior: [
     'Python',
     'TypeScript',
@@ -32,9 +34,6 @@ const jobs = {
   TELEFONICA: ['Python', 'TypeScript', 'Angular', 'Flask', '.NET', 'Azure', 'Docker', 'MongoDB'],
 }
 
-// TODO: Find a way to make this dynamic
-const status = 'unemployed'
-
 const downloadCV = () => {
   const a = document.createElement('a')
   a.href = CV
@@ -53,19 +52,19 @@ const downloadCV = () => {
       {{ $t('timeline.title') }}
     </h2>
 
-    <div class="relative max-w-4xl mx-auto">
+    <div class="relative max-w-4xl mx-auto" :style="{ '--status-color': `var(${status.color})` }">
       <ol
-        class="relative space-y-12 before:absolute before:left-4 before:top-8 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-[var(--color-secondary)] before:to-gray-300 before:-translate-x-1/2 before:hidden sm:before:block"
+        class="relative space-y-12 before:absolute before:left-4 before:top-8 before:bottom-0 before:w-0.5 before:bg-gradient-to-b before:from-[var(--status-color)] before:to-gray-300 before:-translate-x-1/2 before:hidden sm:before:block"
       >
         <!-- Current position - simplified -->
         <li class="relative sm:pl-16 group" tabindex="0">
           <!-- Simple pulsing current indicator -->
           <div class="absolute left-4 top-2 w-6 h-6 -translate-x-1/2 hidden sm:block z-10">
             <div
-              class="absolute inset-0 bg-[var(--color-secondary)] rounded-full animate-ping opacity-75"
+              class="absolute inset-0 bg-[var(--status-color)] rounded-full animate-ping opacity-75"
             ></div>
             <div
-              class="w-6 h-6 bg-[var(--color-secondary)] rounded-full border-4 border-white shadow-xl"
+              class="w-6 h-6 bg-[var(--status-color)] rounded-full border-4 border-white shadow-xl"
             ></div>
           </div>
 
@@ -74,7 +73,7 @@ const downloadCV = () => {
           >
             <div class="flex items-center gap-3 mb-6">
               <div
-                class="px-4 py-2 bg-[var(--color-secondary)] text-white rounded-lg text-sm font-semibold"
+                class="px-4 py-2 bg-[var(--status-color)] text-white rounded-lg text-sm font-semibold"
               >
                 {{ $t('timeline.current.time') }}
               </div>
@@ -83,12 +82,12 @@ const downloadCV = () => {
             <div class="flex flex-col lg:flex-row justify-between items-start gap-6">
               <div class="flex-1">
                 <h3
-                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-secondary-hover)] group-focus-within:text-[var(--color-secondary-hover)] transition-colors duration-300 pb-2"
+                  class="text-xl font-bold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--status-color)] group-focus-within:text-[var(--status-color)] transition-colors duration-300 pb-2"
                 >
-                  {{ $t(`timeline.current.title.${status}`) }}
+                  {{ $t(`timeline.current.title.${status.title}`) }}
                 </h3>
                 <p class="text-lg text-[var(--color-text-secondary)] leading-relaxed">
-                  {{ $t(`timeline.current.description.${status}`) }}
+                  {{ $t(`timeline.current.description.${status.title}`) }}
                 </p>
               </div>
 
