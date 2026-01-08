@@ -5,7 +5,7 @@ import CV from '@/assets/downloads/Alonso_Rapado.pdf'
 import { status } from '@/config/employment_status_config'
 
 const jobs = {
-  ford: ['Java', 'Spring', 'Kubernetes', 'Docker'],
+  ford: ['Java', 'Spring', 'Kubernetes', 'Docker', 'Kafka', 'Postman', 'Google Cloud'],
   ntt_senior: [
     'Python',
     'TypeScript',

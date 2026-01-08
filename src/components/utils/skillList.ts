@@ -30,6 +30,7 @@ const skillIcons = {
   MongoDB: 'devicon-mongodb-plain colored',
   Postman: 'devicon-postman-plain colored',
   Linux: 'devicon-linux-plain',
+  'Google Cloud': 'devicon-googlecloud-plain-wordmark',
 }
 
 const skillList = [
@@ -82,6 +83,7 @@ const skillList = [
       { label: 'Jenkins', icon: skillIcons['Jenkins'], color: 'var(--color-jenkins)' },
       { label: 'IBM Cloud', icon: skillIcons['IBM'], color: 'var(--color-ibm-cloud)' },
       { label: 'Linux', icon: skillIcons['Linux'], color: 'var(--color-linux)' },
+      { label: 'Google Cloud', icon: skillIcons['Google Cloud'], color: 'var(--color-GCP)' },
     ],
   },
   {
