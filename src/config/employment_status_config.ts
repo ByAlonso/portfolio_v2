@@ -10,6 +10,6 @@ const current_employment_status = (current_status: EmploymentStatus) => {
   return employment_status_config[current_status]
 }
 
-const employment_status: EmploymentStatus = 'employed'
+const employment_status: EmploymentStatus = 'exploring'
 
 export const status = current_employment_status(employment_status)
